@@ -9,11 +9,11 @@ mode에 따라서, 파일을 읽기 또는 쓰기 모드로 오픈한다.
 """
 def file_open(path : str, mode : str) -> TextIOWrapper:
     if os.path.exists(path):
-        return open(path, mode)
+        return open(path, mode, encoding="utf-8")
     else:
         with open(path, 'w') as f:
             f.write('{}')
-        return open(path, mode)
+        return open(path, mode, encoding="utf-8")
     
 """
 파이썬 딕셔너리를 JSON 파일로 저장하는 메소드
