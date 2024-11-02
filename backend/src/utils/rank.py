@@ -37,9 +37,7 @@ review_path =  'backend/src/resources/review.json'
 
 
 boxoffice_json = {}
-# movie_rate = {}
-# review_list = []
-# rate = []
+
 
 
 # review = { movieid : [rate] ,}
@@ -53,10 +51,11 @@ def calculate_rate() :
     review_json = json_file_to_dict(review_path)
 
 
-    
+    print(movie_list)
+
 
     def reducer(acc, entry):
-        movie = entry['movie']
+        movie = entry['movieName']
         rate = entry['rate']
 
         if movie not in acc:
@@ -72,10 +71,9 @@ def calculate_rate() :
 
     average_ratings = {movie: values['sum'] / values['count'] for movie, values in result.items()}
 
-    {'명량' : 1, '다른영화' : 2, '333' : 5}
+    print(average_ratings)       
 
 
-    boxoffice_json['평균별점'] = average_ratings['']
 
 
     #TODO movie_list에 average_ratings의 key값과 일치하는 영화에 평균별점 필드로 values를 넣어주기
@@ -88,12 +86,12 @@ def calculate_rate() :
     average_ratings 의 영화 이름 찾기 -> 
     
     """
-    for a in range(len(boxoffice_json)):
-        for b in range(len(boxoffice_json)):
-            if movie_list(b) in average_ratings.keys(a):
-                movie_list[b]['평균 별점'] = average_ratings[a]['movie']
+    # for value in movie_list.values():
+    #     for b in average_ratings.keys() :
+    #         if b in movie_list.values() :
+    #             movie_list.values() = average_ratings['movie']
 
-
+                
 
 
 
@@ -118,8 +116,10 @@ def get_ranking(sort : str, _reverse : bool) :
 
     return boxoffice_json
 
-get_ranking("영화명", False)
-get_ranking("순위", False)
-get_ranking("평균 별점", True)
+# get_ranking("영화명", False)
+# get_ranking("순위", False)
+# get_ranking("평균 별점", True)
 
-print(boxoffice_json)
+calculate_rate()
+
+# print(boxoffice_json)
