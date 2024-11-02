@@ -1,8 +1,13 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
+<<<<<<< HEAD
 from utils.rank import calculate_rate
 from utils.json_io import dict_to_json_data, json_data_to_dict
 from utils.auth import register, login, fetch
+=======
+from utils.json_io import dict_to_json_data, json_data_to_dict
+from utils.auth import register, login, choice_favorite, edit_user
+>>>>>>> 9cbb6ff34496d7004262692ba48af40a7dcd5afa
 
 class BankServer(BaseHTTPRequestHandler):
     """
@@ -38,6 +43,7 @@ class BankServer(BaseHTTPRequestHandler):
         result = {}
 
         # 서비스에 따라, 적절한 메소드를 호출한다.
+<<<<<<< HEAD
         if service_name == '/users':
             result = fetch(service_query['id'][0])
         elif service_name == '/transactions':
@@ -46,6 +52,8 @@ class BankServer(BaseHTTPRequestHandler):
         elif server_name == '/rank':
             result =  calculate_rate()
 
+=======
+>>>>>>> 9cbb6ff34496d7004262692ba48af40a7dcd5afa
         if result:
             result_data = dict_to_json_data(result)
             self.wfile.write(result_data.encode('utf-8'))
@@ -61,14 +69,19 @@ class BankServer(BaseHTTPRequestHandler):
         result = {}
 
         # 서비스에 따라, 적절한 메소드를 호출한다.
-        if service_name == '/register':
-            result = register(dict_data)
-        elif service_name == '/login':
-            result = login(dict_data)
-        elif service_name == '/transfer':
-            result = transfer(dict_data)
-            # 코드 작성
-        
+        # 수정 필요
+        # if service_name == '/register':
+        #     result = register(dict_data)
+        # elif service_name == '/login':
+        #     result = login(dict_data)
+        #     # 코드 작성
+        # elif service_name == '/favorite':
+        #     favorit_lst=[]
+        #     result=choice_favorite()
+        # elif service_name == '/edit':
+        #     edited={}
+        #     result=edit_user()
+
         if result:
             result_data = dict_to_json_data(result)
             self.wfile.write(result_data.encode('utf-8'))
