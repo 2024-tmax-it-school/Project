@@ -51,7 +51,6 @@ def calculate_rate() :
     review_json = json_file_to_dict(review_path)
 
 
-    print(movie_list)
 
 
     def reducer(acc, entry):
@@ -71,8 +70,7 @@ def calculate_rate() :
 
     average_ratings = {movie: values['sum'] / values['count'] for movie, values in result.items()}
 
-    print(average_ratings)       
-
+    # {'영화1': 4, '영화2' : 5}
 
 
 
@@ -86,14 +84,15 @@ def calculate_rate() :
     average_ratings 의 영화 이름 찾기 -> 
     
     """
-    # for value in movie_list.values():
-    #     for b in average_ratings.keys() :
-    #         if b in movie_list.values() :
-    #             movie_list.values() = average_ratings['movie']
+    for movie in movie_list:
+        # {'순위': '111', '영화명': '완벽한 타인', '개봉일': '2018-10-31', '매출액': '44356976474', '관객수': '5294154', '스크린수': '1325', '상영횟수': '143075', '대표국적': '한국', '국적': '한국', '배급사': '롯데컬처웍스(주)롯데엔터테인먼트'}
+        
+        movie_name = movie['영화명']
+        rating = average_ratings[movie_name] 
 
                 
-
-
+        # movie_list 에서 영화명을 찾음. 영화명을 찾은 딕셔너리에 평균 평점을 집어 넣음
+        movie.update({'평균 평점' : rating})
 
 # JSON 파일 열고 읽기
 
