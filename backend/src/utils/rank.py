@@ -37,9 +37,7 @@ review_path =  'backend/src/resources/review.json'
 
 
 boxoffice_json = {}
-# movie_rate = {}
-# review_list = []
-# rate = []
+
 
 
 # review = { movieid : [rate] ,}
@@ -56,7 +54,7 @@ def calculate_rate() :
 
 
     def reducer(acc, entry):
-        movie = entry['movie']
+        movie = entry['movieName']
         rate = entry['rate']
 
         if movie not in acc:
@@ -72,10 +70,8 @@ def calculate_rate() :
 
     average_ratings = {movie: values['sum'] / values['count'] for movie, values in result.items()}
 
-    {'명량' : 1, '다른영화' : 2, '333' : 5}
+    # {'영화1': 4, '영화2' : 5}
 
-
-    boxoffice_json['평균별점'] = average_ratings['']
 
 
     #TODO movie_list에 average_ratings의 key값과 일치하는 영화에 평균별점 필드로 values를 넣어주기
@@ -88,14 +84,15 @@ def calculate_rate() :
     average_ratings 의 영화 이름 찾기 ->
 
     """
-    for movie_data in movie_list:
-        movie_title = movie_data.get('영화명')
-        if movie_title in average_ratings:
-            movie_data['평균 별점'] = average_ratings[movie_title]
+    for movie in movie_list:
+        # {'순위': '111', '영화명': '완벽한 타인', '개봉일': '2018-10-31', '매출액': '44356976474', '관객수': '5294154', '스크린수': '1325', '상영횟수': '143075', '대표국적': '한국', '국적': '한국', '배급사': '롯데컬처웍스(주)롯데엔터테인먼트'}
+        
+        movie_name = movie['영화명']
+        rating = average_ratings[movie_name] 
 
-
-
-
+                
+        # movie_list 에서 영화명을 찾음. 영화명을 찾은 딕셔너리에 평균 평점을 집어 넣음
+        movie.update({'평균 평점' : rating})
 
 # JSON 파일 열고 읽기
 
@@ -118,8 +115,10 @@ def get_ranking(sort : str, _reverse : bool) :
     calculate_rate()
     return boxoffice_json
 
-get_ranking("영화명", False)
-get_ranking("순위", False)
-get_ranking("평균 별점", True)
+# get_ranking("영화명", False)
+# get_ranking("순위", False)
+# get_ranking("평균 별점", True)
 
-print(boxoffice_json)
+calculate_rate()
+
+# print(boxoffice_json)

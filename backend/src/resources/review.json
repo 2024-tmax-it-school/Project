@@ -3,24 +3,24 @@
         "userID": "",
         "movieID": "1",
         "comment": "",
-        "rate": "4"
+        "rate": 4
     },
     {
         "userID": "",
         "movieID": "1",
         "comment": "",
-        "rate": "3"
+        "rate": 3
     },
     {
         "userID": "",
         "movieID": "2",
         "comment": "",
-        "rate": "4"
+        "rate": 4
     },
     {
         "userID": "",
         "movieID": "3",
         "comment": "",
-        "rate": "5"
+        "rate": 5
     }
 ]
