@@ -10,7 +10,7 @@ new_user_info
 	
 }
 
-user.json
+user_info.json
 {
  id:
  pw:
@@ -35,7 +35,7 @@ def register(new_user_info : dict) -> dict:
     else:
         user_info_dict[new_user_id] = new_user_info
 
-    dict_to_json_file(user_info_dict)
+    dict_to_json_file('/user_info.json', user_info_dict)
     return result_dict
 
 """
@@ -61,15 +61,66 @@ reply
 
 
 """
+
 def login(new_user_info : dict) -> dict:
-    user_info_dict = json_file_to_dict()
+    user_info_dict = json_file_to_dict('/user_info.json')
     new_user_id = new_user_info['id']
     new_user_passwd = new_user_info['password']
     result_dict :dict = {'success' : False}
     if new_user_id in user_info_dict:
         if new_user_passwd == user_info_dict[new_user_id]['password']:
             result_dict.update({'success' : True})
+    return result_dict
 
+"""
+user_id, favorite_lst=[]
 
+user_info.json
+{
+ id:
+ pw:
+ name:
+ favorite : [ ]
+}
 
+reply
+{
+	success: true/false
+}
+
+"""
+def choice_favorite(user_id, favorite_lst):
+    user_info_dict = json_file_to_dict('/user_info.json')
+    result_dict={'success':False}
+    if(user_info_dict[user_id]!=[]):
+        return result_dict
+    user_info_dict[user_id]["favorite"]=favorite_lst
+    result_dict.update({'success' : True})
+    dict_to_json_file('/user_info.json', user_info_dict)
+    return result_dict
+
+"""
+user_id, edit_item_dict={name: , favorite:[]}
+
+user_info.json
+{
+ id:
+ pw:
+ name:
+ favorite : [ ]
+}
+
+reply
+{
+	success: true/false
+}
+
+"""
+def edit_user(user_id, edit_item_dict:dict):
+    user_info_dict = json_file_to_dict('/user_info.json')
+    result_dict={'success':False}
+    for key, value in edit_item_dict.items():
+            user_info_dict[user_id][key] = value
+    result_dict.update({'success' : True})
+    dict_to_json_file('/user_info.json', user_info_dict)
     return result_dict
