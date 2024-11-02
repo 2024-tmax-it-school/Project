@@ -4,6 +4,8 @@ from utils.json_io import dict_to_json_data, json_data_to_dict
 from utils.auth import register, login, choice_favorite, edit_user
 from utils.review import get_review, register_review, edit_review, delete_review
 from utils.error import ErrorCode
+from utils.rank import get_ranking
+
 
 class BankServer(BaseHTTPRequestHandler):
     """
@@ -48,8 +50,8 @@ class BankServer(BaseHTTPRequestHandler):
                 print(result)
             else :
                 result = self.throw_error(ErrorCode.ERROR_INVALID_QUERY_PARAM)
-
-                
+        #elif service_name == '/rank' :
+        #    result = get_ranking()
         
         
         # 서비스에 따라, 적절한 메소드를 호출한다.

@@ -50,18 +50,15 @@ def calculate_rate() :
     movie_list = json_file_to_dict(movie_path)
     review_json = json_file_to_dict(review_path)
 
-
-
-
     def reducer(acc, entry):
-        movie = entry['movieName']
-        rate = entry['rate']
+        # movie = entry['movie_id']
+        # rate = entry['rate']
 
-        if movie not in acc:
-            acc[movie] = {"sum": 0, 'count': 0}
+        # if movie not in acc:
+        #     acc[movie] = {"sum": 0, 'count': 0}
 
-        acc[movie]['sum'] += rate
-        acc[movie]['count']  += 1
+        # acc[movie]['sum'] += rate
+        # acc[movie]['count']  += 1
 
         return acc
 
@@ -77,26 +74,26 @@ def calculate_rate() :
     #TODO movie_list에 average_ratings의 key값과 일치하는 영화에 평균별점 필드로 values를 넣어주기
     #TODO 영화이름 찾기 & 포문
 
-    # if average_ratings['movie'] in movie_list['영화명']:
-    #     movie_list['영화명'].update({'평균 별점' : average_ratings['movie']})
+    # if average_ratings['movie'] in movie_list['movie_id']:
+    #     movie_list['movie_id'].update({'avg_rate' : average_ratings['movie']})
     """
 
     average_ratings 의 영화 이름 찾기 ->
 
     """
     for movie in movie_list:
-        # {'순위': '111', '영화명': '완벽한 타인', '개봉일': '2018-10-31', '매출액': '44356976474', '관객수': '5294154', '스크린수': '1325', '상영횟수': '143075', '대표국적': '한국', '국적': '한국', '배급사': '롯데컬처웍스(주)롯데엔터테인먼트'}
+        # {'movie_id': '111', 'movie_name': '완벽한 타인', 'release_date': '2018-10-31', 'take': '44356976474', 'attendance': '5294154', 'screen': '1325', 'screenings': '143075', 'representative_nationality': '한국', 'nationality': '한국', 'distributor': '롯데컬처웍스(주)롯데엔터테인먼트'}
         
-        movie_name = movie['영화명']
-        rating = average_ratings[movie_name] 
+        movie_id = movie['movie_id']
+        rating = average_ratings[movie_id] 
 
                 
-        # movie_list 에서 영화명을 찾음. 영화명을 찾은 딕셔너리에 평균 평점을 집어 넣음
-        movie.update({'평균 평점' : rating})
+        # movie_list 에서 movie_id을 찾음. movie_id을 찾은 딕셔너리에 avg_rate을 집어 넣음
+        movie.update({'avg_rate' : rating})
 
 # JSON 파일 열고 읽기
 
-def get_ranking(sort : str, _reverse : bool) : 
+def get_ranking(sort : str = 'movie_id', _reverse : bool = False) : 
     #TODO 
     #1.json_file_to_dict를 이용해서 JSON 파일 읽기 O
     #2. parameter로 정렬기준 받아서 그것에 따라 정렬하기 (1. 순위, 2. 별점)
@@ -104,21 +101,21 @@ def get_ranking(sort : str, _reverse : bool) :
     global boxoffice_json
     boxoffice_json= json_file_to_dict(movie_path)
 
-    if sort == "영화명":
-        boxoffice_json = sorted(boxoffice_json, key=itemgetter("영화명"), reverse=_reverse)
+    if sort == "movie_name":
+        boxoffice_json = sorted(boxoffice_json, key=itemgetter("movie_name"), reverse=_reverse)
 
-    elif sort == "순위":
-        boxoffice_json = sorted(boxoffice_json, key=itemgetter("순위"), reverse=_reverse)
+    elif sort == "movie_id":
+        boxoffice_json = sorted(boxoffice_json, key=itemgetter("movie_id"), reverse=_reverse)
 
-    elif sort == "평균 별점":
-        boxoffice_json = sorted(boxoffice_json, key=itemgetter("평균 별점"), reverse=_reverse)
-    calculate_rate()
+    elif sort == "avg_rate":
+        boxoffice_json = sorted(boxoffice_json, key=itemgetter("avg_rate"), reverse=_reverse)
+    #calculate_rate()
     return boxoffice_json
 
-# get_ranking("영화명", False)
-# get_ranking("순위", False)
-# get_ranking("평균 별점", True)
+# get_ranking("movie_name", False)
+# get_ranking("movie_id", False)
+# get_ranking("avg_rate", True)
 
-calculate_rate()
+#calculate_rate()
 
 # print(boxoffice_json)

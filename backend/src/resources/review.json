@@ -1,25 +1,25 @@
 [
     {
-        "userID": "",
-        "movieID": "1",
+        "user_id": "",
+        "movie_id": "1",
         "comment": "",
         "rate": 4
     },
     {
-        "userID": "",
-        "movieID": "1",
+        "user_id": "",
+        "movie_id": "1",
         "comment": "",
         "rate": 3
     },
     {
-        "userID": "",
-        "movieID": "2",
+        "user_id": "",
+        "movie_id": "2",
         "comment": "",
         "rate": 4
     },
     {
-        "userID": "",
-        "movieID": "3",
+        "user_id": "",
+        "movie_id": "3",
         "comment": "",
         "rate": 5
     }
