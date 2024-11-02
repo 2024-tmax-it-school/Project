@@ -1,4 +1,4 @@
-from json_io import dict_to_json_file, json_file_to_dict
+from utils.json_io import dict_to_json_file, json_file_to_dict
 
 """
 회원가입을 수행하는 메소드

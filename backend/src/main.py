@@ -1,13 +1,9 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
-<<<<<<< HEAD
-from utils.rank import calculate_rate
-from utils.json_io import dict_to_json_data, json_data_to_dict
-from utils.auth import register, login, fetch
-=======
 from utils.json_io import dict_to_json_data, json_data_to_dict
 from utils.auth import register, login, choice_favorite, edit_user
->>>>>>> 9cbb6ff34496d7004262692ba48af40a7dcd5afa
+from utils.review import get_review, register_review, edit_review, delete_review
+from utils.error import ErrorCode
 
 class BankServer(BaseHTTPRequestHandler):
     """
@@ -31,29 +27,32 @@ class BankServer(BaseHTTPRequestHandler):
         # http://localhost:8080 이후의, /service_name?query_params가 해당한다.
         service_with_query_params = urlparse(self.path)
         # /service_name?query_params 중 /service_name만 추출한다.
-        servie_name = service_with_query_params.path
+        service_name = service_with_query_params.path
         # /service_name?query_params 중 query_params만 추출한다.
         query_params = parse_qs(service_with_query_params.query)
 
-        return servie_name, query_params
+        return service_name, query_params
+    
+    def throw_error(self, error) -> ErrorCode:
+        if error == ErrorCode.ERROR_INVALID_QUERY_PARAM : 
+            return "Check valid query params"
 
     def do_GET(self):
         self.make_header()
         service_name, service_query = self.divide_path()
         result = {}
+        
+        if service_name == '/review':
+            if 'movie_id' in service_query:
+                result = get_review(service_query['movie_id'][0])
+                print(result)
+            else :
+                result = self.throw_error(ErrorCode.ERROR_INVALID_QUERY_PARAM)
 
+                
+        
+        
         # 서비스에 따라, 적절한 메소드를 호출한다.
-<<<<<<< HEAD
-        if service_name == '/users':
-            result = fetch(service_query['id'][0])
-        elif service_name == '/transactions':
-            result = getTransactions(service_query['id'][0])
-
-        elif server_name == '/rank':
-            result =  calculate_rate()
-
-=======
->>>>>>> 9cbb6ff34496d7004262692ba48af40a7dcd5afa
         if result:
             result_data = dict_to_json_data(result)
             self.wfile.write(result_data.encode('utf-8'))

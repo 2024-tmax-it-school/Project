@@ -1,27 +1,26 @@
 [
     {
         "userID": "",
-        "movieID": "명량",
+        "movieID": "1",
         "comment": "",
         "rate": "4"
     },
     {
         "userID": "",
-        "movieID": "명량",
+        "movieID": "1",
         "comment": "",
         "rate": "3"
     },
     {
         "userID": "",
-        "movieID": "다른영화",
+        "movieID": "2",
         "comment": "",
         "rate": "4"
     },
     {
         "userID": "",
-        "movieID": "명량",
+        "movieID": "3",
         "comment": "",
         "rate": "5"
     }
-    
 ]

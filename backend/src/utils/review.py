@@ -1,7 +1,7 @@
 import json
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
-from json_io import file_open, json_data_to_dict, json_file_to_dict, dict_to_json_file
+from utils.json_io import file_open, json_data_to_dict, json_file_to_dict, dict_to_json_file
 
 # 기본 리뷰 구조
 review = {
@@ -14,8 +14,10 @@ review = {
 review_path = 'backend/src/resources/review.json'
 
 # 특정 영화 ID에 대한 리뷰를 가져오는 함수
-def get_review(movie_id: int):
+def get_review(movie_id: str):
     movie_json = json_file_to_dict(review_path)
+    print(movie_json)
+    print(movie_id)
     filtered_reviews = [review for review in movie_json if review.get("movieID") == str(movie_id)]
     return filtered_reviews
 

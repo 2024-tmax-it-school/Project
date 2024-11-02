@@ -1,5 +1,5 @@
 import json
-from json_io import json_file_to_dict
+from utils.json_io import json_file_to_dict
 from operator import itemgetter
 from functools import reduce
 
@@ -53,7 +53,7 @@ def calculate_rate() :
     review_json = json_file_to_dict(review_path)
 
 
-    
+
 
     def reducer(acc, entry):
         movie = entry['movie']
@@ -66,7 +66,7 @@ def calculate_rate() :
         acc[movie]['count']  += 1
 
         return acc
-    
+
     result = reduce(reducer, review_json, {})
     # {movie : {sum : 평점 합, count : 리뷰 갯수}}
 
@@ -84,14 +84,14 @@ def calculate_rate() :
     # if average_ratings['movie'] in movie_list['영화명']:
     #     movie_list['영화명'].update({'평균 별점' : average_ratings['movie']})
     """
-    
-    average_ratings 의 영화 이름 찾기 -> 
-    
+
+    average_ratings 의 영화 이름 찾기 ->
+
     """
-    for a in range(len(boxoffice_json)):
-        for b in range(len(boxoffice_json)):
-            if movie_list(b) in average_ratings.keys(a):
-                movie_list[b]['평균 별점'] = average_ratings[a]['movie']
+    for movie_data in movie_list:
+        movie_title = movie_data.get('영화명')
+        if movie_title in average_ratings:
+            movie_data['평균 별점'] = average_ratings[movie_title]
 
 
 
@@ -107,15 +107,15 @@ def get_ranking(sort : str, _reverse : bool) :
     global boxoffice_json
     boxoffice_json= json_file_to_dict(movie_path)
 
-    if(sort == "영화명"):
+    if sort == "영화명":
         boxoffice_json = sorted(boxoffice_json, key=itemgetter("영화명"), reverse=_reverse)
 
-    elif(sort == "순위"):
+    elif sort == "순위":
         boxoffice_json = sorted(boxoffice_json, key=itemgetter("순위"), reverse=_reverse)
 
-    elif(sort == "평균 별점"):
+    elif sort == "평균 별점":
         boxoffice_json = sorted(boxoffice_json, key=itemgetter("평균 별점"), reverse=_reverse)
-
+    calculate_rate()
     return boxoffice_json
 
 get_ranking("영화명", False)
