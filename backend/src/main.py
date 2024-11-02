@@ -1,8 +1,8 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
-from json_util.json_io import dict_to_json_data, json_data_to_dict
-from auth.user_auth import register, login, fetch
-from core.banking import transfer, getTransactions
+from utils.rank import calculate_rate
+from utils.json_io import dict_to_json_data, json_data_to_dict
+from utils.auth import register, login, fetch
 
 class BankServer(BaseHTTPRequestHandler):
     """
@@ -42,6 +42,9 @@ class BankServer(BaseHTTPRequestHandler):
             result = fetch(service_query['id'][0])
         elif service_name == '/transactions':
             result = getTransactions(service_query['id'][0])
+
+        elif server_name == '/rank':
+            result =  calculate_rate()
 
         if result:
             result_data = dict_to_json_data(result)
