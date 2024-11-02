@@ -45,7 +45,6 @@ new_user_info
 {
     'id' : 아이디,
     'password' : 비밀번호
-	
 }
 
 user.json
@@ -89,7 +88,7 @@ reply
 }
 
 """
-def choice_favorite(user_id, favorite_lst):
+def choice_favorite(user_id, favorite_lst:list):
     user_info_dict = json_file_to_dict('/user_info.json')
     result_dict={'success':False}
     if(user_info_dict[user_id]!=[]):
