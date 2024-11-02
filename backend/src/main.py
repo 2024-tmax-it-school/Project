@@ -1,9 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
-from json_util.json_io import dict_to_json_data, json_data_to_dict
-from auth.user_auth import register, login, fetch
-from core.banking import transfer, getTransactions
-from utils.review import get_review
+from utils.json_io import dict_to_json_data, json_data_to_dict
+from utils.auth import register, login, choice_favorite, edit_user
 
 class BankServer(BaseHTTPRequestHandler):
     """
@@ -37,25 +35,11 @@ class BankServer(BaseHTTPRequestHandler):
         self.make_header()
         service_name, service_query = self.divide_path()
         result = {}
-        parsed_path = urlparse(self.path)
-        query = parse_qs(parsed_path.query)
-
-        
 
         # 서비스에 따라, 적절한 메소드를 호출한다.
-        if service_name == '/users':
-            result = fetch(service_query['id'][0])
-        elif service_name == '/transactions':
-            result = getTransactions(service_query['id'][0])
-
         if result:
             result_data = dict_to_json_data(result)
             self.wfile.write(result_data.encode('utf-8'))
-        
-        elif service_name == '/review':
-            movie_id = query.get('movie_id', [None])[0]
-            result = get_review(movie_id)
-
 
     def do_POST(self):
         self.make_header()
@@ -68,14 +52,18 @@ class BankServer(BaseHTTPRequestHandler):
         result = {}
 
         # 서비스에 따라, 적절한 메소드를 호출한다.
-
-        if service_name == '/register':
-            result = register(dict_data)
-        elif service_name == '/login':
-            result = login(dict_data)
-        elif service_name == '/transfer':
-            result = transfer(dict_data)
-            # 코드 작성
+        # 수정 필요
+        # if service_name == '/register':
+        #     result = register(dict_data)
+        # elif service_name == '/login':
+        #     result = login(dict_data)
+        #     # 코드 작성
+        # elif service_name == '/favorite':
+        #     favorit_lst=[]
+        #     result=choice_favorite()
+        # elif service_name == '/edit':
+        #     edited={}
+        #     result=edit_user()
 
         if result:
             result_data = dict_to_json_data(result)
