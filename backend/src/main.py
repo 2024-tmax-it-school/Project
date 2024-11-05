@@ -124,6 +124,21 @@ class BankServer(BaseHTTPRequestHandler):
         if result:
             result_data = dict_to_json_data(result)
             self.wfile.write(result_data.encode('utf-8'))
+        
+        if service_name == '/register_review':  
+            result = register_review(data)
+            self.respond(result)
+
+        elif service_name == '/edit_review':  
+            result = edit_review(data)
+            self.respond(result)
+        
+        elif service_name == '/delete_review': 
+            movie_id = data.get('movieID')
+            user_id = data.get('userID')
+            if movie_id and user_id:
+                result = delete_review(movie_id, user_id)
+                self.respond(result)
 
 
 server_address = ('localhost', 8080)
