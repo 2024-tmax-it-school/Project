@@ -61,8 +61,11 @@ reply
 
 """
 
+user_info_path = 'backend/src/resources/user_info.json'
+
 def login(new_user_info : dict) -> dict:
-    user_info_dict = json_file_to_dict('/user_info.json')
+    # TODO user_info에 DATA가 없는경우, 고려해야함
+    user_info_dict = json_file_to_dict(user_info_path)
     new_user_id = new_user_info['id']
     new_user_passwd = new_user_info['password']
     result_dict :dict = {'success' : False}

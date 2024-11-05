@@ -51,6 +51,7 @@ def edit_review(data: dict):
 
 # 리뷰를 삭제하는 함수
 def delete_review(movie_id: int, user_id: int):
+    #동작 안함
     movie_json = json_file_to_dict(review_path)
     original_length = len(movie_json)
     movie_json = [review for review in movie_json if not (review.get("movie_id") == str(movie_id) and review.get("user_id") == str(user_id))]

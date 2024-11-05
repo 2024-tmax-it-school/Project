@@ -1,4 +1,5 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
+from inspect import signature
 from urllib.parse import parse_qs, urlparse
 
 from utils.auth import choice_favorite, edit_user, login, register
@@ -40,7 +41,28 @@ class BankServer(BaseHTTPRequestHandler):
     def throw_error(self, error) -> ErrorCode:
         if error == ErrorCode.ERROR_INVALID_QUERY_PARAM:
             return dict_to_json_data({"error": "Check valid query params"})
-        return dict_to_json_data({"error": "Unknown error"})
+        elif error == ErrorCode.ERROR_INVALID_SERVICE:
+            return dict_to_json_data({"error": "Check valid service"})
+        else :
+            return dict_to_json_data({"error": "Unknown error"})
+        
+    # review 관련 처리
+    def handle_review(self, dict_data, segments):
+        if len(segments) > 1:
+            action = segments[1]
+            print(action)
+            if action == 'edit':
+                return edit_review(dict_data)
+            elif action == 'register':
+                return register_review(dict_data)
+            elif action == 'delete' and 'movie_id' in dict_data and 'user_id' in dict_data:
+                return delete_review(dict_data['movie_id'], dict_data['user_id'])
+            else:
+                return self.throw_error(ErrorCode.ERROR_INVALID_SERVICE)
+        elif 'movie_id' in dict_data:
+            return get_review(dict_data)
+        else:
+            return self.throw_error(ErrorCode.ERROR_INVALID_QUERY_PARAM)
     
     def do_GET(self):
         self.make_header()
@@ -64,30 +86,45 @@ class BankServer(BaseHTTPRequestHandler):
 
     def do_POST(self):
         self.make_header()
-        service_name, _ = self.divide_path()
+        service_path, _ = self.divide_path()
         # POST는 body에 데이터가 담겨있기 때문에, 읽어온다.
         json_data = self.rfile.read(int(self.headers['Content-Length'])).decode('utf-8')
         # 읽어온 json 데이터를 딕셔너리로 변환한다.
         dict_data = json_data_to_dict(json_data)
         result = {}
-        
-        # 서비스에 따라, 적절한 메소드를 호출한다.
-        # 수정 필요
-        if service_name == '/register':
-            result = register(dict_data)
-        elif service_name == '/login':
-            result = login(dict_data)
-            # 코드 작성
+        segments = service_path.strip('/').split('/')
+        service_name = segments[0]
+        print(service_name)
+        # 서비스별 메소드 맵핑을 딕셔너리로 관리
+        service_methods = {
+            'register': register,
+            'login': login,
+            'review': self.handle_review
+        }
+        # 서비스 이름에 해당하는 함수 호출
+        if service_name in service_methods:
+            func = service_methods[service_name]
+            sig = signature(func)
+            params = sig.parameters
+            
+            if len(params) == 2:
+                result = service_methods[service_name](dict_data, segments)
+            else:
+                result = service_methods[service_name](dict_data)
+        else:
+            result = self.throw_error(ErrorCode.ERROR_INVALID_SERVICE)
+
         # elif service_name == '/favorite':
         #     favorit_lst=[]
         #     result=choice_favorite()
         # elif service_name == '/edit':
         #     edited={}
         #     result=edit_user()
-
+        print(result)
         if result:
             result_data = dict_to_json_data(result)
             self.wfile.write(result_data.encode('utf-8'))
+
 
 server_address = ('localhost', 8080)
 httpd = HTTPServer(server_address, BankServer)
