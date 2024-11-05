@@ -1,7 +1,9 @@
 import json
-from http.server import HTTPServer, BaseHTTPRequestHandler
-from urllib.parse import urlparse, parse_qs
-from utils.json_io import file_open, json_data_to_dict, json_file_to_dict, dict_to_json_file
+from http.server import BaseHTTPRequestHandler, HTTPServer
+from urllib.parse import parse_qs, urlparse
+
+from utils.json_io import (dict_to_json_file, file_open, json_data_to_dict,
+                           json_file_to_dict)
 
 # 기본 리뷰 구조
 review = {
@@ -25,8 +27,13 @@ def get_review(movie_id: str):
 def register_review(data: dict):
     movie_json = json_file_to_dict(review_path)
     movie_json.append(data)
-    return dict_to_json_file(review_path, movie_json)
+    dict_to_json_file(review_path, movie_json)
 
+    return {
+        'success': True,
+        'message': '리뷰가 등록되었습니다.'
+    }
+    
 # 리뷰를 수정하는 함수
 def edit_review(data: dict):
     movie_json = json_file_to_dict(review_path)
@@ -34,9 +41,13 @@ def edit_review(data: dict):
     for review in movie_json:
         if review.get("movie_id") == data.get("movie_id") and review.get("user_id") == data.get("user_id"):
             review.update(data)  # 리뷰 내용 업데이트
-            return dict_to_json_file(review_path, movie_json)
+            dict_to_json_file(review_path, movie_json)
+            return {'success': True, 'message': '리뷰가 수정되었습니다.'}
 
-    return False  # 수정할 리뷰가 없을 경우
+    return {
+        'success': False,
+        'message': '리뷰를 찾을 수 없습니다.'
+    }  # 수정할 리뷰가 없을 경우
 
 # 리뷰를 삭제하는 함수
 def delete_review(movie_id: int, user_id: int):
@@ -47,6 +58,12 @@ def delete_review(movie_id: int, user_id: int):
     success = len(movie_json) < original_length
 
     if success:
-        return dict_to_json_file(review_path, movie_json)
+        return {
+            'success': True,
+            'message': '리뷰가 삭제되었습니다.'
+        }
     
-    return False  # 삭제할 리뷰가 없을 경우
+    return {
+            'success': False,
+            'message': '리뷰를 찾을 수 없습니다.'
+        }  # 삭제할 리뷰가 없을 경우

@@ -1,10 +1,12 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
-from urllib.parse import urlparse, parse_qs
-from utils.json_io import dict_to_json_data, json_data_to_dict
-from utils.auth import register, login, choice_favorite, edit_user
-from utils.review import get_review, register_review, edit_review, delete_review
+from urllib.parse import parse_qs, urlparse
+
+from utils.auth import choice_favorite, edit_user, login, register
 from utils.error import ErrorCode
+from utils.json_io import dict_to_json_data, json_data_to_dict
 from utils.rank import get_ranking
+from utils.review import (delete_review, edit_review, get_review,
+                          register_review)
 
 
 class BankServer(BaseHTTPRequestHandler):
@@ -36,24 +38,25 @@ class BankServer(BaseHTTPRequestHandler):
         return service_name, query_params
     
     def throw_error(self, error) -> ErrorCode:
-        if error == ErrorCode.ERROR_INVALID_QUERY_PARAM : 
-            return "Check valid query params"
-
+        if error == ErrorCode.ERROR_INVALID_QUERY_PARAM:
+            return dict_to_json_data({"error": "Check valid query params"})
+        return dict_to_json_data({"error": "Unknown error"})
+    
     def do_GET(self):
         self.make_header()
-        service_name, service_query = self.divide_path()
+        service_path, service_query = self.divide_path()
         result = {}
+        segments = service_path.strip('/').split('/')
+        service_name = segments[0]
         
         if service_name == '/review':
             if 'movie_id' in service_query:
                 result = get_review(service_query['movie_id'][0])
-                print(result)
-            else :
-                result = self.throw_error(ErrorCode.ERROR_INVALID_QUERY_PARAM)
-        #elif service_name == '/rank' :
-        #    result = get_ranking()
-        
-        
+            else:
+                result = self.throw_error(ErrorCode.ERROR_INVALID_QUERY_PARAM)        
+        # elif service_name == "/my_page" :
+            #result = get_my_page(service_query['user_id'][0])
+            
         # 서비스에 따라, 적절한 메소드를 호출한다.
         if result:
             result_data = dict_to_json_data(result)
@@ -62,20 +65,19 @@ class BankServer(BaseHTTPRequestHandler):
     def do_POST(self):
         self.make_header()
         service_name, _ = self.divide_path()
-
         # POST는 body에 데이터가 담겨있기 때문에, 읽어온다.
         json_data = self.rfile.read(int(self.headers['Content-Length'])).decode('utf-8')
         # 읽어온 json 데이터를 딕셔너리로 변환한다.
         dict_data = json_data_to_dict(json_data)
         result = {}
-
+        
         # 서비스에 따라, 적절한 메소드를 호출한다.
         # 수정 필요
-        # if service_name == '/register':
-        #     result = register(dict_data)
-        # elif service_name == '/login':
-        #     result = login(dict_data)
-        #     # 코드 작성
+        if service_name == '/register':
+            result = register(dict_data)
+        elif service_name == '/login':
+            result = login(dict_data)
+            # 코드 작성
         # elif service_name == '/favorite':
         #     favorit_lst=[]
         #     result=choice_favorite()
