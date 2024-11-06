@@ -1,5 +1,6 @@
 import json
 from utils.json_io import json_file_to_dict
+from utils.json_io import dict_to_json_file
 from operator import itemgetter
 from functools import reduce
 
@@ -37,6 +38,18 @@ review_path =  'backend/src/resources/review.json'
 
 
 boxoffice_json = {}
+movie_rate = {}
+review_json = {}
+rate = []
+rewiew = {}
+
+
+def calculate_rate(movie_data: dict) :
+    global boxoffice_json
+    movie_path = boxoffice.json
+    boxoffice_json = json_file_to_dict(movie_path)
+    global review_json
+    review_json = json_file_to_dict(movie_path)
 
 
 
@@ -51,14 +64,14 @@ def calculate_rate() :
     review_json = json_file_to_dict(review_path)
 
     def reducer(acc, entry):
-        # movie = entry['movie_id']
-        # rate = entry['rate']
+        movie = entry['movie_id']
+        rate = entry['rate']
 
-        # if movie not in acc:
-        #     acc[movie] = {"sum": 0, 'count': 0}
+        if movie not in acc:
+            acc[movie] = {"sum": 0, 'count': 0}
 
-        # acc[movie]['sum'] += rate
-        # acc[movie]['count']  += 1
+        acc[movie]['sum'] += rate
+        acc[movie]['count']  += 1
 
         return acc
 
@@ -81,10 +94,10 @@ def calculate_rate() :
     average_ratings 의 영화 이름 찾기 ->
 
     """
-    for movie in movie_list:
+    for average_ratings[movie] in movie_list:
         # {'movie_id': '111', 'movie_name': '완벽한 타인', 'release_date': '2018-10-31', 'take': '44356976474', 'attendance': '5294154', 'screen': '1325', 'screenings': '143075', 'representative_nationality': '한국', 'nationality': '한국', 'distributor': '롯데컬처웍스(주)롯데엔터테인먼트'}
         
-        movie_id = movie['movie_id']
+        review[movie_id] = average_ratings[movie]['movie_id']
         rating = average_ratings[movie_id] 
 
                 
@@ -99,7 +112,7 @@ def get_ranking(sort : str = 'movie_id', _reverse : bool = False) :
     #2. parameter로 정렬기준 받아서 그것에 따라 정렬하기 (1. 순위, 2. 별점)
 
     global boxoffice_json
-    boxoffice_json= json_file_to_dict(movie_path)
+    boxoffice_json = json_file_to_dict(movie_path)
 
     if sort == "movie_name":
         boxoffice_json = sorted(boxoffice_json, key=itemgetter("movie_name"), reverse=_reverse)
