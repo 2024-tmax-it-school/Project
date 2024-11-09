@@ -78,6 +78,8 @@ class BankServer(BaseHTTPRequestHandler):
                 result = self.throw_error(ErrorCode.ERROR_INVALID_QUERY_PARAM)        
         elif service_name == "/my_page" :
             result = get_my_page(service_query['user_id'][0])
+        elif service_name == '/rank':
+            result = get_ranking(service_query['sort'][0], service_query['reverse'][0])
         elif service_name == '/edit_my_page' :
             result = edit_user(service_query['user_id'][0], service_query)
             

@@ -9,6 +9,7 @@
         "screenings": "188730",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Action"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -21,6 +22,7 @@
         "screenings": "292817",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Comedy"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -33,6 +35,7 @@
         "screenings": "214631",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Action"],
         "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
     },
     {
@@ -45,6 +48,7 @@
         "screenings": "212722",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Drama"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -57,6 +61,7 @@
         "screenings": "246411",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
     },
     {
@@ -69,6 +74,7 @@
         "screenings": "301536",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Animation", "Drama"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
     },
     {
@@ -81,6 +87,7 @@
         "screenings": "199307",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -93,6 +100,7 @@
         "screenings": "164437",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action"],
         "distributor": "주식회사 해리슨앤컴퍼니,이십세기폭스코리아(주)"
     },
     {
@@ -105,6 +113,7 @@
         "screenings": "374540",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action", "Drama"],
         "distributor": "플러스엠 엔터테인먼트"
     },
     {
@@ -117,6 +126,7 @@
         "screenings": "155487",
         "representative_nationality": "한국",
         "nationality": "한국,홍콩",
+        "genre": ["Action"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -129,6 +139,7 @@
         "screenings": "167014",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Drama"],
         "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
     },
     {
@@ -141,6 +152,7 @@
         "screenings": "284954",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Drama"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
     },
     {
@@ -153,6 +165,7 @@
         "screenings": "175332",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -165,6 +178,7 @@
         "screenings": "355768",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "주식회사 에이비오엔터테인먼트,플러스엠 엔터테인먼트"
     },
     {
@@ -177,6 +191,7 @@
         "screenings": "203464",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Action"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -189,6 +204,7 @@
         "screenings": "180750",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Action", "Drama"],
         "distributor": "롯데컬처웍스(주)롯데엔터테인먼트"
     },
     {
@@ -201,6 +217,7 @@
         "screenings": "184228",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -213,6 +230,7 @@
         "screenings": "364894",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Horror"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -225,6 +243,7 @@
         "screenings": "151535",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Horror", "Action", "Drama"],
         "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
     },
     {
@@ -237,6 +256,7 @@
         "screenings": "375429",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action", "Thriller"],
         "distributor": "주식회사 에이비오엔터테인먼트,플러스엠 엔터테인먼트"
     },
     {
@@ -249,6 +269,7 @@
         "screenings": "152290",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Drama"],
         "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
     },
     {
@@ -261,6 +282,7 @@
         "screenings": "154332",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Blockbuster", "Drama"],
         "distributor": "CJ ENM"
     },
     {
@@ -273,6 +295,7 @@
         "screenings": "243677",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action", "Blockbuster"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
     },
     {
@@ -285,6 +308,7 @@
         "screenings": "112933",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Thriller", "Drama"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -297,6 +321,7 @@
         "screenings": "283036",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Blockbuster"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
     },
     {
@@ -309,6 +334,7 @@
         "screenings": "311915",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action", "Blockbuster"],
         "distributor": "주식회사 에이비오엔터테인먼트,플러스엠 엔터테인먼트"
     },
     {
@@ -321,6 +347,7 @@
         "screenings": "111183",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy"],
         "distributor": "(주)씨제이이엔엠,(주)시네마서비스"
     },
     {
@@ -333,6 +360,7 @@
         "screenings": "194385",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action", "Blockbuster"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사,월트디즈니컴퍼니코리아(주)"
     },
     {
@@ -345,6 +373,7 @@
         "screenings": "170542",
         "representative_nationality": "미국",
         "nationality": "미국,영국",
+        "genre": ["Fantasy", "Blockbuster"],
         "distributor": "워너브러더스 코리아(주)"
     },
     {
@@ -357,6 +386,7 @@
         "screenings": "160138",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Animation"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사,소니픽쳐스릴리징월트디즈니스튜디오스코리아(주)"
     },
     {
@@ -369,6 +399,7 @@
         "screenings": "206648",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Thriller"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -381,6 +412,7 @@
         "screenings": "232226",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Drama"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사,이십세기폭스코리아(주)"
     },
     {
@@ -393,6 +425,7 @@
         "screenings": "153532",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -405,6 +438,7 @@
         "screenings": "202430",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Comedy", "Drama"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -417,6 +451,7 @@
         "screenings": "126025",
         "representative_nationality": "한국",
         "nationality": "한국,체코",
+        "genre": ["Fantasy", "Blockbuster", "Action"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -429,6 +464,7 @@
         "screenings": "125098",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -441,6 +477,7 @@
         "screenings": "164283",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action", "Blockbuster"],
         "distributor": "소니픽쳐스릴리징월트디즈니스튜디오스코리아(주)"
     },
     {
@@ -453,6 +490,7 @@
         "screenings": "331310",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Animation"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
     },
     {
@@ -465,6 +503,7 @@
         "screenings": "161744",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action", "Blockbuster"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사,월트디즈니컴퍼니코리아(주)"
     },
     {
@@ -477,6 +516,7 @@
         "screenings": "133354",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Action"],
         "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
     },
     {
@@ -489,6 +529,7 @@
         "screenings": "137028",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Drama"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -501,6 +542,7 @@
         "screenings": "174506",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Blockbuster"],
         "distributor": "(주)씨제이이엔엠,(주)덱스터스튜디오"
     },
     {
@@ -513,6 +555,7 @@
         "screenings": "253093",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Action", "Blockbuster"],
         "distributor": "롯데컬처웍스(주)롯데엔터테인먼트"
     },
     {
@@ -525,6 +568,7 @@
         "screenings": "145556",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Drama"],
         "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
     },
     {
@@ -537,6 +581,7 @@
         "screenings": "131671",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Drama"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -549,6 +594,7 @@
         "screenings": "181035",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action", "Blockbuster"],
         "distributor": "소니픽쳐스엔터테인먼트코리아주식회사극장배급지점"
     },
     {
@@ -561,6 +607,7 @@
         "screenings": "96439",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -573,6 +620,7 @@
         "screenings": "142999",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action", "Drama"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -585,6 +633,7 @@
         "screenings": "124464",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Blockbuster"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -597,6 +646,7 @@
         "screenings": "142715",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Drama"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -609,6 +659,7 @@
         "screenings": "276708",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action", "Blockbuster"],
         "distributor": "소니픽쳐스엔터테인먼트코리아주식회사극장배급지점"
     },
     {
@@ -621,6 +672,7 @@
         "screenings": "114770",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -633,6 +685,7 @@
         "screenings": "138162",
         "representative_nationality": "한국",
         "nationality": "한국,미국",
+        "genre": ["Action"],
         "distributor": "워너브러더스 코리아(주)"
     },
     {
@@ -645,6 +698,7 @@
         "screenings": "130054",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
     },
     {
@@ -657,6 +711,7 @@
         "screenings": "265543",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -669,6 +724,7 @@
         "screenings": "93109",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Blockbuster"],
         "distributor": "롯데컬처웍스(주)롯데엔터테인먼트,CJ ENM"
     },
     {
@@ -681,6 +737,7 @@
         "screenings": "115150",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Blockbuster"],
         "distributor": "CJ ENM"
     },
     {
@@ -693,6 +750,7 @@
         "screenings": "149158",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Drama"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -705,6 +763,7 @@
         "screenings": "217786",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Blockbuster"],
         "distributor": "롯데컬처웍스(주)롯데엔터테인먼트"
     },
     {
@@ -717,6 +776,7 @@
         "screenings": "164448",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action", "Blockbuster"],
         "distributor": "소니픽쳐스엔터테인먼트코리아주식회사극장배급지점"
     },
     {
@@ -729,6 +789,7 @@
         "screenings": "247524",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Drama", "Animation"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
     },
     {
@@ -741,6 +802,7 @@
         "screenings": "138236",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -753,6 +815,7 @@
         "screenings": "111760",
         "representative_nationality": "한국",
         "nationality": "한국,독일",
+        "genre": ["Action"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -765,6 +828,7 @@
         "screenings": "126927",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -777,6 +841,7 @@
         "screenings": "113215",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Blockbuster"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -789,6 +854,7 @@
         "screenings": "112559",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action", "Blockbuster"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사,한국소니픽쳐스릴리징브에나비스타영화㈜"
     },
     {
@@ -801,6 +867,7 @@
         "screenings": "152783",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -813,6 +880,7 @@
         "screenings": "97038",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Blockbuster"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -825,6 +893,7 @@
         "screenings": "275817",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -837,6 +906,7 @@
         "screenings": "155991",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Comedy", "Drama"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -849,6 +919,7 @@
         "screenings": "117463",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Action", "Comedy", "Drama"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -861,6 +932,7 @@
         "screenings": "149389",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "플러스엠 엔터테인먼트,(주)키위미디어그룹"
     },
     {
@@ -873,6 +945,7 @@
         "screenings": "130332",
         "representative_nationality": "한국",
         "nationality": "한국,미국",
+        "genre": ["Fantasy", "Horror", "Thriller"],
         "distributor": "이십세기폭스코리아(주)"
     },
     {
@@ -885,6 +958,7 @@
         "screenings": "96536",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action", "Thriller"],
         "distributor": "CJ ENM"
     },
     {
@@ -897,6 +971,7 @@
         "screenings": "93583",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Comedy"],
         "distributor": "CJ ENM"
     },
     {
@@ -909,6 +984,7 @@
         "screenings": "109262",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Drama"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -921,6 +997,7 @@
         "screenings": "108775",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "(주)씨제이이엔엠"
     },
     {
@@ -933,6 +1010,7 @@
         "screenings": "101820",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action", "Blockbuster"],
         "distributor": "롯데컬처웍스(주)롯데엔터테인먼트"
     },
     {
@@ -945,6 +1023,7 @@
         "screenings": "71968",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Comedy", "Drama"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -957,6 +1036,7 @@
         "screenings": "84755",
         "representative_nationality": "미국",
         "nationality": "미국,영국",
+        "genre": ["Fantasy", "Action", "Blockbuster"],
         "distributor": "워너브러더스 코리아(주)"
     },
     {
@@ -969,6 +1049,7 @@
         "screenings": "124276",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Action"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -981,6 +1062,7 @@
         "screenings": "110055",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "CJ ENM"
     },
     {
@@ -993,6 +1075,7 @@
         "screenings": "139988",
         "representative_nationality": "미국",
         "nationality": "미국,영국",
+        "genre": ["Fantasy", "Action"],
         "distributor": "이십세기폭스코리아(주)"
     },
     {
@@ -1005,6 +1088,7 @@
         "screenings": "89683",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action", "Blockbuster"],
         "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
     },
     {
@@ -1017,6 +1101,7 @@
         "screenings": "86960",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Comedy", "Drama"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -1029,6 +1114,7 @@
         "screenings": "102348",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Comedy"],
         "distributor": "CJ ENM"
     },
     {
@@ -1041,6 +1127,7 @@
         "screenings": "114497",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Drama", "Blockbuster"],
         "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
     },
     {
@@ -1053,6 +1140,7 @@
         "screenings": "93242",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Action"],
         "distributor": "(주)디스테이션,워너브러더스 코리아(주)"
     },
     {
@@ -1065,6 +1153,7 @@
         "screenings": "85825",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Action"],
         "distributor": "유니버설픽쳐스인터내셔널 코리아(유)"
     },
     {
@@ -1077,6 +1166,7 @@
         "screenings": "211097",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Blockbuster"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
     },
     {
@@ -1089,6 +1179,7 @@
         "screenings": "186382",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Blockbuster"],
         "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
     },
     {
@@ -1101,6 +1192,7 @@
         "screenings": "77599",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "CJ ENM"
     },
     {
@@ -1113,6 +1205,7 @@
         "screenings": "144779",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Thriller", "Blockbuster"],
         "distributor": "유니버설픽쳐스인터내셔널 코리아(유)"
     },
     {
@@ -1125,6 +1218,7 @@
         "screenings": "118547",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Comedy", "Drama"],
         "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
     },
     {
@@ -1137,6 +1231,7 @@
         "screenings": "88066",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Horror", "Thriller"],
         "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
     },
     {
@@ -1149,6 +1244,7 @@
         "screenings": "97322",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Drama"],
         "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
     },
     {
@@ -1161,6 +1257,7 @@
         "screenings": "93489",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Fantasy", "Blockbuster"],
         "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
     },
     {
@@ -1173,6 +1270,7 @@
         "screenings": "244929",
         "representative_nationality": "일본",
         "nationality": "일본",
+        "genre": ["Fantasy", "Animation"],
         "distributor": "(주)쇼박스"
     },
     {
@@ -1185,6 +1283,7 @@
         "screenings": "119248",
         "representative_nationality": "미국",
         "nationality": "미국",
+        "genre": ["Fantasy", "Blockbuster", "Thriller"],
         "distributor": "유니버설픽쳐스인터내셔널 코리아(유)"
     },
     {
@@ -1197,1206 +1296,7 @@
         "screenings": "100349",
         "representative_nationality": "한국",
         "nationality": "한국",
+        "genre": ["Action"],
         "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
-    },
-    {
-        "movie_id": "101",
-        "movie_name": "앤트맨과 와스프",
-        "release_date": "2018-07-04",
-        "take": "47470638985",
-        "attendance": "5448357",
-        "screen": "1775",
-        "screenings": "148269",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
-    },
-    {
-        "movie_id": "102",
-        "movie_name": "닥터 스트레인지",
-        "release_date": "2016-10-26",
-        "take": "47490572396",
-        "attendance": "5447269",
-        "screen": "1503",
-        "screenings": "162879",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "월트디즈니컴퍼니코리아(주)"
-    },
-    {
-        "movie_id": "103",
-        "movie_name": "검은 사제들",
-        "release_date": "2015-11-05",
-        "take": "42412952592",
-        "attendance": "5443232",
-        "screen": "1109",
-        "screenings": "131179",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "104",
-        "movie_name": "안시성",
-        "release_date": "2018-09-19",
-        "take": "46343506526",
-        "attendance": "5441207",
-        "screen": "1540",
-        "screenings": "110456",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
-    },
-    {
-        "movie_id": "105",
-        "movie_name": "의형제",
-        "release_date": "2010-02-04",
-        "take": "40154381000",
-        "attendance": "5416923",
-        "screen": "569",
-        "screenings": "118251",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "106",
-        "movie_name": "블랙 팬서",
-        "release_date": "2018-02-14",
-        "take": "45896080357",
-        "attendance": "5400241",
-        "screen": "1620",
-        "screenings": "119239",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
-    },
-    {
-        "movie_id": "107",
-        "movie_name": "2012",
-        "release_date": "2009-11-12",
-        "take": "38941723000",
-        "attendance": "5397597",
-        "screen": "856",
-        "screenings": "89309",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "한국소니픽쳐스릴리징브에나비스타영화㈜"
-    },
-    {
-        "movie_id": "108",
-        "movie_name": "더 킹",
-        "release_date": "2017-01-18",
-        "take": "43494687535",
-        "attendance": "5318202",
-        "screen": "1310",
-        "screenings": "107989",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
-    },
-    {
-        "movie_id": "109",
-        "movie_name": "완득이",
-        "release_date": "2011-10-20",
-        "take": "38534841000",
-        "attendance": "5311497",
-        "screen": "629",
-        "screenings": "117821",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "110",
-        "movie_name": "트랜스포머: 사라진 시대",
-        "release_date": "2014-06-25",
-        "take": "44012752845",
-        "attendance": "5295836",
-        "screen": "1602",
-        "screenings": "107875",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "111",
-        "movie_name": "완벽한 타인",
-        "release_date": "2018-10-31",
-        "take": "44356976474",
-        "attendance": "5294154",
-        "screen": "1325",
-        "screenings": "143075",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트"
-    },
-    {
-        "movie_id": "112",
-        "movie_name": "조커",
-        "release_date": "2019-10-02",
-        "take": "45778663951",
-        "attendance": "5284344",
-        "screen": "1418",
-        "screenings": "151193",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "워너브러더스 코리아(주)"
-    },
-    {
-        "movie_id": "113",
-        "movie_name": "월드 워 Z",
-        "release_date": "2013-06-20",
-        "take": "38589794000",
-        "attendance": "5244336",
-        "screen": "964",
-        "screenings": "102831",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
-    },
-    {
-        "movie_id": "114",
-        "movie_name": "타워",
-        "release_date": "2012-12-25",
-        "take": "37656008000",
-        "attendance": "5181244",
-        "screen": "638",
-        "screenings": "81151",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "115",
-        "movie_name": "미녀와 야수",
-        "release_date": "2017-03-16",
-        "take": "42256681159",
-        "attendance": "5156725",
-        "screen": "1627",
-        "screenings": "142745",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
-    },
-    {
-        "movie_id": "116",
-        "movie_name": "밀수",
-        "release_date": "2023-07-26",
-        "take": "49686998003",
-        "attendance": "5143481",
-        "screen": "1932",
-        "screenings": "167673",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
-    },
-    {
-        "movie_id": "117",
-        "movie_name": "미션 임파서블 3",
-        "release_date": "2006-05-03",
-        "take": "32141243900",
-        "attendance": "5124671",
-        "screen": "437",
-        "screenings": "72534",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "UIP코리아"
-    },
-    {
-        "movie_id": "118",
-        "movie_name": "투사부일체",
-        "release_date": "2006-01-19",
-        "take": "31949667000",
-        "attendance": "5073037",
-        "screen": "407",
-        "screenings": "54332",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "CJ ENM"
-    },
-    {
-        "movie_id": "119",
-        "movie_name": "쿵푸팬더 2",
-        "release_date": "2011-05-26",
-        "take": "44310427500",
-        "attendance": "5064796",
-        "screen": "948",
-        "screenings": "101447",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "120",
-        "movie_name": "독전",
-        "release_date": "2018-05-22",
-        "take": "43491762113",
-        "attendance": "5064323",
-        "screen": "1532",
-        "screenings": "140052",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
-    },
-    {
-        "movie_id": "121",
-        "movie_name": "추격자",
-        "release_date": "2008-02-14",
-        "take": "33986959000",
-        "attendance": "5046096",
-        "screen": "433",
-        "screenings": "106805",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "122",
-        "movie_name": "아쿠아맨",
-        "release_date": "2018-12-19",
-        "take": "44145008504",
-        "attendance": "5041187",
-        "screen": "1285",
-        "screenings": "105440",
-        "representative_nationality": "미국",
-        "nationality": "미국,호주",
-        "distributor": "워너브러더스 코리아(주)"
-    },
-    {
-        "movie_id": "123",
-        "movie_name": "공작",
-        "release_date": "2018-08-08",
-        "take": "42795690816",
-        "attendance": "4975517",
-        "screen": "1317",
-        "screenings": "99122",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "124",
-        "movie_name": "인사이드 아웃",
-        "release_date": "2015-07-09",
-        "take": "38055237936",
-        "attendance": "4972640",
-        "screen": "931",
-        "screenings": "84307",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "월트디즈니컴퍼니코리아(주)"
-    },
-    {
-        "movie_id": "125",
-        "movie_name": "킹스맨: 골든 서클",
-        "release_date": "2017-09-27",
-        "take": "40987484736",
-        "attendance": "4945484",
-        "screen": "1687",
-        "screenings": "95922",
-        "representative_nationality": "미국",
-        "nationality": "미국,영국",
-        "distributor": "이십세기폭스코리아(주)"
-    },
-    {
-        "movie_id": "126",
-        "movie_name": "바람과 함께 사라지다",
-        "release_date": "2012-08-08",
-        "take": "34614720161",
-        "attendance": "4909950",
-        "screen": "694",
-        "screenings": "78594",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
-    },
-    {
-        "movie_id": "127",
-        "movie_name": "마션",
-        "release_date": "2015-10-08",
-        "take": "39702034175",
-        "attendance": "4887144",
-        "screen": "1132",
-        "screenings": "115967",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사,이십세기폭스코리아(주)"
-    },
-    {
-        "movie_id": "128",
-        "movie_name": "더 퍼스트 슬램덩크",
-        "release_date": "2023-01-04",
-        "take": "51067337745",
-        "attendance": "4883922",
-        "screen": "1060",
-        "screenings": "238020",
-        "representative_nationality": "일본",
-        "nationality": "일본",
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
-    },
-    {
-        "movie_id": "129",
-        "movie_name": "토르: 라그나로크",
-        "release_date": "2017-10-25",
-        "take": "39261266595",
-        "attendance": "4858572",
-        "screen": "1640",
-        "screenings": "137496",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
-    },
-    {
-        "movie_id": "130",
-        "movie_name": "어메이징 스파이더맨",
-        "release_date": "2012-06-28",
-        "take": "41165656235",
-        "attendance": "4853273",
-        "screen": "1118",
-        "screenings": "92766",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "한국소니픽쳐스릴리징브에나비스타영화㈜"
-    },
-    {
-        "movie_id": "131",
-        "movie_name": "님아, 그 강을 건너지 마오",
-        "release_date": "2014-11-27",
-        "take": "37366316579",
-        "attendance": "4803505",
-        "screen": "806",
-        "screenings": "93566",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "CGV아트하우스,(주)대명문화공장"
-    },
-    {
-        "movie_id": "132",
-        "movie_name": "봉오동 전투",
-        "release_date": "2019-08-07",
-        "take": "40593705038",
-        "attendance": "4788118",
-        "screen": "1476",
-        "screenings": "107055",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "133",
-        "movie_name": "조선명탐정 : 각시투구꽃의 비밀",
-        "release_date": "2011-01-27",
-        "take": "35842409500",
-        "attendance": "4786369",
-        "screen": "632",
-        "screenings": "84145",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "134",
-        "movie_name": "군도: 민란의 시대",
-        "release_date": "2014-07-23",
-        "take": "36992608499",
-        "attendance": "4775990",
-        "screen": "1394",
-        "screenings": "67261",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "135",
-        "movie_name": "남산의 부장들",
-        "release_date": "2020-01-22",
-        "take": "41229590550",
-        "attendance": "4750859",
-        "screen": "1659",
-        "screenings": "140219",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "136",
-        "movie_name": "라이온 킹",
-        "release_date": "2019-07-17",
-        "take": "41519732430",
-        "attendance": "4743295",
-        "screen": "1936",
-        "screenings": "126503",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
-    },
-    {
-        "movie_id": "137",
-        "movie_name": "범죄와의 전쟁: 나쁜놈들 전성시대",
-        "release_date": "2012-02-02",
-        "take": "36540977500",
-        "attendance": "4720172",
-        "screen": "713",
-        "screenings": "91915",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "138",
-        "movie_name": "주토피아",
-        "release_date": "2016-02-17",
-        "take": "37147956842",
-        "attendance": "4711015",
-        "screen": "735",
-        "screenings": "131453",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "월트디즈니컴퍼니코리아(주)"
-    },
-    {
-        "movie_id": "139",
-        "movie_name": "파일럿",
-        "release_date": "2024-07-31",
-        "take": "43136533201",
-        "attendance": "4708370",
-        "screen": "1956",
-        "screenings": "203204",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트"
-    },
-    {
-        "movie_id": "140",
-        "movie_name": "엣지 오브 투모로우",
-        "release_date": "2014-06-04",
-        "take": "38786998201",
-        "attendance": "4706213",
-        "screen": "801",
-        "screenings": "95776",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "워너브러더스 코리아(주)"
-    },
-    {
-        "movie_id": "141",
-        "movie_name": "신세계",
-        "release_date": "2013-02-21",
-        "take": "34931269185",
-        "attendance": "4690270",
-        "screen": "671",
-        "screenings": "91865",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
-    },
-    {
-        "movie_id": "142",
-        "movie_name": "신비한 동물사전",
-        "release_date": "2016-11-16",
-        "take": "39365960288",
-        "attendance": "4669702",
-        "screen": "1431",
-        "screenings": "116374",
-        "representative_nationality": "미국",
-        "nationality": "미국,영국",
-        "distributor": "워너브러더스 코리아(주)"
-    },
-    {
-        "movie_id": "143",
-        "movie_name": "도가니",
-        "release_date": "2011-09-22",
-        "take": "35570402000",
-        "attendance": "4663377",
-        "screen": "754",
-        "screenings": "88251",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "144",
-        "movie_name": "쿵푸 팬더",
-        "release_date": "2008-06-05",
-        "take": "29998156500",
-        "attendance": "4654267",
-        "screen": "563",
-        "screenings": "79901",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "CJ ENM"
-    },
-    {
-        "movie_id": "145",
-        "movie_name": "내 아내의 모든 것",
-        "release_date": "2012-05-17",
-        "take": "34224467500",
-        "attendance": "4598985",
-        "screen": "563",
-        "screenings": "91777",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
-    },
-    {
-        "movie_id": "146",
-        "movie_name": "판도라",
-        "release_date": "2016-12-07",
-        "take": "36069197064",
-        "attendance": "4585116",
-        "screen": "1184",
-        "screenings": "100273",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
-    },
-    {
-        "movie_id": "147",
-        "movie_name": "스파이더맨 3",
-        "release_date": "2007-05-01",
-        "take": "29453324000",
-        "attendance": "4582342",
-        "screen": "802",
-        "screenings": "79616",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "한국소니픽쳐스릴리징브에나비스타영화㈜"
-    },
-    {
-        "movie_id": "148",
-        "movie_name": "맘마미아!",
-        "release_date": "2008-09-03",
-        "take": "29693828850",
-        "attendance": "4579143",
-        "screen": "451",
-        "screenings": "111812",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "유니버설픽쳐스인터내셔널 코리아(유)"
-    },
-    {
-        "movie_id": "149",
-        "movie_name": "나쁜 녀석들: 더 무비",
-        "release_date": "2019-09-11",
-        "take": "39560195124",
-        "attendance": "4573902",
-        "screen": "1511",
-        "screenings": "113938",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "150",
-        "movie_name": "노량: 죽음의 바다",
-        "release_date": "2023-12-20",
-        "take": "45008466375",
-        "attendance": "4573426",
-        "screen": "2196",
-        "screenings": "155714",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트,(주)에이스메이커무비웍스"
-    },
-    {
-        "movie_id": "151",
-        "movie_name": "캐리비안의 해적: 세상의 끝에서",
-        "release_date": "2007-05-23",
-        "take": "29122818500",
-        "attendance": "4569391",
-        "screen": "953",
-        "screenings": "77968",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "한국소니픽쳐스릴리징브에나비스타영화㈜"
-    },
-    {
-        "movie_id": "152",
-        "movie_name": "가문의 위기",
-        "release_date": "2005-09-07",
-        "take": "28599708500",
-        "attendance": "4526455",
-        "screen": "349",
-        "screenings": "60888",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "153",
-        "movie_name": "연가시",
-        "release_date": "2012-07-05",
-        "take": "32176550664",
-        "attendance": "4516063",
-        "screen": "759",
-        "screenings": "71932",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "154",
-        "movie_name": "터미네이터 : 미래전쟁의 시작",
-        "release_date": "2009-05-21",
-        "take": "29689831500",
-        "attendance": "4499580",
-        "screen": "702",
-        "screenings": "93738",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
-    },
-    {
-        "movie_id": "155",
-        "movie_name": "강철비",
-        "release_date": "2017-12-14",
-        "take": "35490646466",
-        "attendance": "4452900",
-        "screen": "1426",
-        "screenings": "80360",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
-    },
-    {
-        "movie_id": "156",
-        "movie_name": "아이언맨 2",
-        "release_date": "2010-04-29",
-        "take": "32657025420",
-        "attendance": "4426719",
-        "screen": "921",
-        "screenings": "88229",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "CJ ENM"
-    },
-    {
-        "movie_id": "157",
-        "movie_name": "해리포터와 죽음의 성물2",
-        "release_date": "2011-07-13",
-        "take": "34668545500",
-        "attendance": "4421210",
-        "screen": "757",
-        "screenings": "70853",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "워너브러더스 코리아(주)"
-    },
-    {
-        "movie_id": "158",
-        "movie_name": "다만 악에서 구하소서",
-        "release_date": "2020-08-05",
-        "take": "38602897990",
-        "attendance": "4357873",
-        "screen": "1998",
-        "screenings": "193850",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "159",
-        "movie_name": "헌트",
-        "release_date": "2022-08-10",
-        "take": "44602463153",
-        "attendance": "4352513",
-        "screen": "1625",
-        "screenings": "170966",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "플러스엠 엔터테인먼트"
-    },
-    {
-        "movie_id": "160",
-        "movie_name": "엑스맨: 데이즈 오브 퓨처 패스트",
-        "release_date": "2014-05-22",
-        "take": "34654558766",
-        "attendance": "4313871",
-        "screen": "1056",
-        "screenings": "82722",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "이십세기폭스코리아(주)"
-    },
-    {
-        "movie_id": "161",
-        "movie_name": "강철중: 공공의 적 1-1",
-        "release_date": "2008-06-19",
-        "take": "28638472100",
-        "attendance": "4313103",
-        "screen": "707",
-        "screenings": "74157",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "CJ ENM,(주)시네마서비스"
-    },
-    {
-        "movie_id": "162",
-        "movie_name": "아이언맨",
-        "release_date": "2008-04-30",
-        "take": "27937928520",
-        "attendance": "4306077",
-        "screen": "592",
-        "screenings": "78985",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "CJ ENM"
-    },
-    {
-        "movie_id": "163",
-        "movie_name": "아가씨",
-        "release_date": "2016-06-01",
-        "take": "35221312991",
-        "attendance": "4289008",
-        "screen": "1171",
-        "screenings": "90393",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "164",
-        "movie_name": "다크 나이트",
-        "release_date": "2008-08-06",
-        "take": "28786695189",
-        "attendance": "4283639",
-        "screen": "462",
-        "screenings": "75782",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "주식회사 해리슨앤컴퍼니,워너브러더스 코리아(주)"
-    },
-    {
-        "movie_id": "165",
-        "movie_name": "박물관이 살아있다!",
-        "release_date": "2006-12-21",
-        "take": "24399290200",
-        "attendance": "4244803",
-        "screen": "345",
-        "screenings": "56497",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "이십세기폭스코리아(주)"
-    },
-    {
-        "movie_id": "166",
-        "movie_name": "가디언즈 오브 갤럭시: Volume 3",
-        "release_date": "2023-05-03",
-        "take": "44358441834",
-        "attendance": "4209250",
-        "screen": "1819",
-        "screenings": "153745",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
-    },
-    {
-        "movie_id": "167",
-        "movie_name": "말아톤",
-        "release_date": "2005-01-27",
-        "take": "26272557000",
-        "attendance": "4194959",
-        "screen": "238",
-        "screenings": "59375",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "168",
-        "movie_name": "어메이징 스파이더맨 2",
-        "release_date": "2014-04-23",
-        "take": "34869101800",
-        "attendance": "4168353",
-        "screen": "1312",
-        "screenings": "91715",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "소니픽쳐스릴리징월트디즈니스튜디오스코리아(주)"
-    },
-    {
-        "movie_id": "169",
-        "movie_name": "용의자",
-        "release_date": "2013-12-24",
-        "take": "30037521000",
-        "attendance": "4131338",
-        "screen": "807",
-        "screenings": "69124",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "170",
-        "movie_name": "건축학개론",
-        "release_date": "2012-03-22",
-        "take": "30252336900",
-        "attendance": "4114968",
-        "screen": "593",
-        "screenings": "106870",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
-    },
-    {
-        "movie_id": "171",
-        "movie_name": "인디아나 존스 4 : 크리스탈 해골의 왕국",
-        "release_date": "2008-05-22",
-        "take": "26689440000",
-        "attendance": "4111753",
-        "screen": "771",
-        "screenings": "75393",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "CJ ENM"
-    },
-    {
-        "movie_id": "172",
-        "movie_name": "미이라 3:황제의 무덤",
-        "release_date": "2008-07-30",
-        "take": "26217311000",
-        "attendance": "4090885",
-        "screen": "634",
-        "screenings": "64779",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "유니버설픽쳐스인터내셔널 코리아(유)"
-    },
-    {
-        "movie_id": "173",
-        "movie_name": "댄싱퀸",
-        "release_date": "2012-01-18",
-        "take": "30130775500",
-        "attendance": "4058225",
-        "screen": "544",
-        "screenings": "80987",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "174",
-        "movie_name": "7급 공무원",
-        "release_date": "2009-04-22",
-        "take": "26380710000",
-        "attendance": "4039891",
-        "screen": "475",
-        "screenings": "90779",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
-    },
-    {
-        "movie_id": "175",
-        "movie_name": "미션 임파서블: 데드 레코닝 PART ONE",
-        "release_date": "2023-07-12",
-        "take": "40430706769",
-        "attendance": "4022291",
-        "screen": "2437",
-        "screenings": "137978",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트"
-    },
-    {
-        "movie_id": "176",
-        "movie_name": "우리 생애 최고의 순간",
-        "release_date": "2008-01-10",
-        "take": "26119898000",
-        "attendance": "4018872",
-        "screen": "418",
-        "screenings": "70724",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)싸이더스"
-    },
-    {
-        "movie_id": "177",
-        "movie_name": "꾼",
-        "release_date": "2017-11-22",
-        "take": "31313568795",
-        "attendance": "4018341",
-        "screen": "1314",
-        "screenings": "117419",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "178",
-        "movie_name": "타짜-신의 손",
-        "release_date": "2014-09-03",
-        "take": "32373120927",
-        "attendance": "4015361",
-        "screen": "890",
-        "screenings": "80584",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트,(주)싸이더스"
-    },
-    {
-        "movie_id": "179",
-        "movie_name": "혹성탈출: 반격의 서막",
-        "release_date": "2014-07-10",
-        "take": "31514053095",
-        "attendance": "4002560",
-        "screen": "956",
-        "screenings": "72881",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "이십세기폭스코리아(주)"
-    },
-    {
-        "movie_id": "180",
-        "movie_name": "쿵푸팬더3",
-        "release_date": "2016-01-28",
-        "take": "31340813156",
-        "attendance": "3984814",
-        "screen": "1365",
-        "screenings": "97405",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "181",
-        "movie_name": "캡틴 아메리카: 윈터 솔져",
-        "release_date": "2014-03-26",
-        "take": "31728426385",
-        "attendance": "3964965",
-        "screen": "1106",
-        "screenings": "110158",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사,소니픽쳐스릴리징월트디즈니스튜디오스코리아(주)"
-    },
-    {
-        "movie_id": "182",
-        "movie_name": "매드 맥스: 분노의 도로",
-        "release_date": "2015-05-14",
-        "take": "34088853006",
-        "attendance": "3949545",
-        "screen": "799",
-        "screenings": "106737",
-        "representative_nationality": "미국",
-        "nationality": "미국,호주",
-        "distributor": "워너브러더스 코리아(주)"
-    },
-    {
-        "movie_id": "183",
-        "movie_name": "너의 이름은.",
-        "release_date": "2017-01-04",
-        "take": "31873370537",
-        "attendance": "3917514",
-        "screen": "947",
-        "screenings": "93936",
-        "representative_nationality": "일본",
-        "nationality": "일본",
-        "distributor": "플러스엠 엔터테인먼트"
-    },
-    {
-        "movie_id": "184",
-        "movie_name": "캐리비안의 해적 : 망자의 함",
-        "release_date": "2006-07-06",
-        "take": "23832939000",
-        "attendance": "3911617",
-        "screen": "456",
-        "screenings": "49648",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "브에나비스타인터내셔널코리아"
-    },
-    {
-        "movie_id": "185",
-        "movie_name": "박수건달",
-        "release_date": "2013-01-09",
-        "take": "28379548569",
-        "attendance": "3897969",
-        "screen": "603",
-        "screenings": "60604",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "186",
-        "movie_name": "베놈",
-        "release_date": "2018-10-03",
-        "take": "34100211207",
-        "attendance": "3888096",
-        "screen": "1308",
-        "screenings": "116149",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "소니픽쳐스엔터테인먼트코리아주식회사극장배급지점"
-    },
-    {
-        "movie_id": "187",
-        "movie_name": "조선명탐정 : 사라진 놉의 딸",
-        "release_date": "2015-02-11",
-        "take": "30456879428",
-        "attendance": "3872015",
-        "screen": "825",
-        "screenings": "80499",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "188",
-        "movie_name": "역린",
-        "release_date": "2014-04-30",
-        "take": "29895031890",
-        "attendance": "3849700",
-        "screen": "1054",
-        "screenings": "83304",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
-    },
-    {
-        "movie_id": "189",
-        "movie_name": "콘크리트 유토피아",
-        "release_date": "2023-08-09",
-        "take": "37413826232",
-        "attendance": "3849344",
-        "screen": "1731",
-        "screenings": "150920",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트"
-    },
-    {
-        "movie_id": "190",
-        "movie_name": "남한산성",
-        "release_date": "2017-10-03",
-        "take": "31225655792",
-        "attendance": "3849159",
-        "screen": "1229",
-        "screenings": "71117",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "191",
-        "movie_name": "반도",
-        "release_date": "2020-07-15",
-        "take": "33078694380",
-        "attendance": "3812954",
-        "screen": "2575",
-        "screenings": "199267",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
-    },
-    {
-        "movie_id": "192",
-        "movie_name": "라라랜드",
-        "release_date": "2016-12-07",
-        "take": "31398468278",
-        "attendance": "3793377",
-        "screen": "727",
-        "screenings": "116290",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "판씨네마(주)"
-    },
-    {
-        "movie_id": "193",
-        "movie_name": "암수살인",
-        "release_date": "2018-10-03",
-        "take": "32998321048",
-        "attendance": "3789553",
-        "screen": "1177",
-        "screenings": "126129",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "194",
-        "movie_name": "데드풀 2",
-        "release_date": "2018-05-16",
-        "take": "34185664639",
-        "attendance": "3784602",
-        "screen": "1576",
-        "screenings": "113288",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "이십세기폭스코리아(주)"
-    },
-    {
-        "movie_id": "195",
-        "movie_name": "국가부도의 날",
-        "release_date": "2018-11-28",
-        "take": "30895253837",
-        "attendance": "3755495",
-        "screen": "1180",
-        "screenings": "101184",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)씨제이이엔엠"
-    },
-    {
-        "movie_id": "196",
-        "movie_name": "쌍화점",
-        "release_date": "2008-12-30",
-        "take": "25411823400",
-        "attendance": "3749034",
-        "screen": "532",
-        "screenings": "72498",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "(주)쇼박스"
-    },
-    {
-        "movie_id": "197",
-        "movie_name": "신기전",
-        "release_date": "2008-09-04",
-        "take": "24326413000",
-        "attendance": "3728440",
-        "screen": "585",
-        "screenings": "78463",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "distributor": "CJ ENM"
-    },
-    {
-        "movie_id": "198",
-        "movie_name": "비긴 어게인",
-        "release_date": "2014-08-13",
-        "take": "29517517811",
-        "attendance": "3705940",
-        "screen": "525",
-        "screenings": "103208",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "판씨네마(주)"
-    },
-    {
-        "movie_id": "199",
-        "movie_name": "해리 포터와 불사조 기사단",
-        "release_date": "2007-07-11",
-        "take": "23010956770",
-        "attendance": "3702538",
-        "screen": "768",
-        "screenings": "53631",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "워너브러더스 코리아(주)"
-    },
-    {
-        "movie_id": "200",
-        "movie_name": "미이라",
-        "release_date": "2017-06-06",
-        "take": "30504689978",
-        "attendance": "3689325",
-        "screen": "1257",
-        "screenings": "105228",
-        "representative_nationality": "미국",
-        "nationality": "미국",
-        "distributor": "유니버설픽쳐스인터내셔널 코리아(유)"
     }
 ]
