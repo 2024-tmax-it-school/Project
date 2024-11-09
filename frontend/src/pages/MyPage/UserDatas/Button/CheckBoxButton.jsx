@@ -24,7 +24,7 @@ const CheckBoxButton = ({ favorite, handleCheckboxChange, state }) => {
           // 상태가 true일 때는 체크된 항목만 표시
           return favorite.includes(category.id) ? (
             <span className="checkBoxStyle" key={category.id}>
-              <label htmlFor={category.id}>{category.label}</label>
+              <label htmlFor={category.id}>#{category.label}</label>
             </span>
           ) : null;
         } else {
