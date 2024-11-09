@@ -1,2 +1,40 @@
 .MyPage {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.MyPage .container {
+  display: flex;
+  width: 100%;
+  height: 30%;
+}
+
+.MyPage .container .Path {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MyPage .container .Path img {
+  width: 70px;
+  height: 70px;
+}
+
+.MyPage .container .UserData {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: start;
+  align-items: center;
+  padding: 32px;
+}
+
+li {
+  list-style: none;
 }
