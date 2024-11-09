@@ -129,11 +129,10 @@ class BankServer(BaseHTTPRequestHandler):
                 result = service_methods[service_name](dict_data, segments)
             else:
                 result = service_methods[service_name](dict_data)
-                if result["success"] == True and service_name == "login" :
-                    self.send_response(302)  # 리다이렉트 응답
-                    self.send_header("Location", "/")  # 홈 페이지로 리다이렉트
-                    self.send_header('Set-Cookie', f'id={dict_data["id"]}')  # 쿠키 설정
-                    self.end_headers()
+                # if result["success"] == True and service_name == "login" :
+                #     self.send_header('Set-Cookie', f'id={dict_data["id"]}')  # 쿠키 설정
+                #     self.end_headers()
+
         else:
             result = self.throw_error(ErrorCode.ERROR_INVALID_SERVICE)
         if result:
