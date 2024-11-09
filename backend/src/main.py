@@ -1,6 +1,5 @@
 import urllib.parse
 from http.server import BaseHTTPRequestHandler, HTTPServer
-from inspect import signature
 from urllib.parse import parse_qs, urlparse
 
 from utils.auth import edit_user, get_my_page, login, register
@@ -23,14 +22,9 @@ class BankServer(BaseHTTPRequestHandler):
 
     """
     http://localhost:8080/service_name?query_params 형태의 
-    
     URL을 분리한다.
     """
     def divide_path(self) -> tuple:
-        ###################작성필요########################
-        # 힌트 : urlparse, parse_qs 함수를 사용
-        ##################################################
-        # http://localhost:8080 이후의, /service_name?query_params가 해당한다.
         service_with_query_params = urlparse(self.path)
         # /service_name?query_params 중 /service_name만 추출한다.
         service_name = service_with_query_params.path
@@ -38,15 +32,15 @@ class BankServer(BaseHTTPRequestHandler):
         query_params = parse_qs(service_with_query_params.query)
 
         return service_name, query_params
-    
+
     def throw_error(self, error) -> ErrorCode:
         if error == ErrorCode.ERROR_INVALID_QUERY_PARAM:
             return dict_to_json_data({"error": "Check valid query params"})
         elif error == ErrorCode.ERROR_INVALID_SERVICE:
             return dict_to_json_data({"error": "Check valid service"})
-        else :
+        else:
             return dict_to_json_data({"error": "Unknown error"})
-        
+    
     # review 관련 처리
     def handle_review(self, dict_data, segments):
         if len(segments) > 1:
@@ -85,7 +79,7 @@ class BankServer(BaseHTTPRequestHandler):
                 result = get_review(service_query['movie_id'][0])
             else:
                 result = self.throw_error(ErrorCode.ERROR_INVALID_QUERY_PARAM)        
-        elif service_name == "my_page" :
+        elif service_name == "my_page":
             result = get_my_page(service_query['user_id'][0])
         elif service_name == 'rank':
             result = get_ranking(service_query['sort'][0], bool(int(service_query['reverse'][0])))
@@ -130,6 +124,13 @@ class BankServer(BaseHTTPRequestHandler):
             result_data = dict_to_json_data(result)
             self.wfile.write(result_data.encode('utf-8'))
 
-server_address = ('localhost', 8080)
-httpd = HTTPServer(server_address, BankServer)
-httpd.serve_forever()
+def run(server_class=HTTPServer, handler_class=BankServer):
+    server_class=HTTPServer
+    handler_class=BankServer
+    server_address = ('0.0.0.0', 8080)  # 0.0.0.0으로 설정하여 모든 IP에서 접속 가능
+
+    httpd = server_class(server_address, handler_class)
+    httpd.serve_forever()
+
+if __name__ == '__main__':
+    run()
