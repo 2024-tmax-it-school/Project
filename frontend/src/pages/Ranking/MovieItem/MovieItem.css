@@ -1,0 +1,15 @@
+.MovieItem {
+  position: relative;
+  width: 224px;
+  height: 320px;
+  background-color: skyblue;
+}
+
+.MovieItem .hovered {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 224px;
+  height: 320px;
+  background: rgba(0, 0, 0, 0.7);
+}

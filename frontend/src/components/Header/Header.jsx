@@ -6,19 +6,24 @@ import { useNavigate } from "react-router-dom";
 
 function Header() {
   const navigate = useNavigate();
+
+  const handleClickLogo = () => {
+    navigate("/ranking");
+  };
+
   const handleClickProfile = () => {
     navigate("/mypage");
   };
 
   return (
     <div className="Header">
-      <div className="logo_container">
+      <button className="logo_container" onClick={handleClickLogo}>
         <span>애선씨네 사랑방</span>
         <img src={Logo} alt="logo" className="logo" />
-      </div>
-      <div onClick={handleClickProfile}>
+      </button>
+      <button onClick={handleClickProfile}>
         <AccountCircleIcon sx={{ fontSize: "32px" }} />
-      </div>
+      </button>
     </div>
   );
 }

@@ -1,7 +1,15 @@
 .Ranking {
-  padding-top: 48px;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
+  padding-top: 360px;
   margin: 64px;
-  background-color: tomato;
+}
+
+.Ranking .movie_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 16px;
 }
