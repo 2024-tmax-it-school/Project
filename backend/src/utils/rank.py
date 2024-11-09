@@ -59,12 +59,9 @@ def recommend_movies(movies : dict, id: str, _reverse: bool):
     ]
 
     # 겹치는 장르의 개수를 기준으로 내림차순 정렬
-    overlap_movies.sort(key=lambda x: x["overlap_count"], reverse=_reverse)
-
-    # 정렬된 결과에서 영화 목록만 추출
-    sorted_movies = [item["movie"] for item in overlap_movies if item["overlap_count"] > 0]
+    overlap_movies.sort(key=lambda x: x["overlap_count"], reverse=not(_reverse))
     
-    return sorted_movies
+    return overlap_movies
 
 
 
