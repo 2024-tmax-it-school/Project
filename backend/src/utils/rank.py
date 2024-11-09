@@ -1,10 +1,9 @@
 import json
-from utils.json_io import json_file_to_dict
-from utils.json_io import dict_to_json_file
-from operator import itemgetter
-from functools import reduce
-
 import os
+from functools import reduce
+from operator import itemgetter
+
+from utils.json_io import json_file_to_dict
 
 #json_str = json.dumps(json_data, ensure_ascii=False)
 #file = open('20240824_3.json', 'w')
@@ -46,7 +45,6 @@ rewiew = {}
 
 def calculate_rate(movie_data: dict) :
     global boxoffice_json
-    movie_path = boxoffice.json
     boxoffice_json = json_file_to_dict(movie_path)
     global review_json
     review_json = json_file_to_dict(movie_path)
