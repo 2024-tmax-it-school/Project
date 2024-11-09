@@ -83,13 +83,17 @@ class BankServer(BaseHTTPRequestHandler):
             cookies = urllib.parse.parse_qs(cookie_header)
             user_id = cookies.get('id', ['없음'])[0]
             result = get_ranking(service_query['sort'][0], bool(int(service_query['reverse'][0])), user_id)
+        elif service_name =="logout":
+            self.send_response(302)  # 리다이렉트 응답
+            self.send_header("Set-Cookie", "id=; expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; Secure")
+            self.end_headers()
 
         # 서비스에 따라, 적절한 메소드를 호출한다.
         if result:
             result_data = dict_to_json_data(result)
             self.wfile.write(result_data.encode('utf-8'))
 
-    def do_POST(self):
+    def do_POST(self):           
         self.make_header()
         service_path, _ = self.divide_path()
         # POST는 body에 데이터가 담겨있기 때문에, 읽어온다.
@@ -116,7 +120,9 @@ class BankServer(BaseHTTPRequestHandler):
                 result = service_methods[service_name](dict_data, segments)
             else:
                 result = service_methods[service_name](dict_data)
-                if service_name == "login" :
+                if result["success"] == True and service_name == "login" :
+                    self.send_response(302)  # 리다이렉트 응답
+                    self.send_header("Location", "/")  # 홈 페이지로 리다이렉트
                     self.send_header('Set-Cookie', f'id={dict_data["id"]}')  # 쿠키 설정
                     self.end_headers()
         else:

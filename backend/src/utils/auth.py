@@ -77,9 +77,11 @@ def login(new_user_info : dict) -> dict:
         return result_dict
     new_user_id = new_user_info['id']
     new_user_passwd = new_user_info['password']
-    if new_user_id in user_info_dict:
-        if new_user_passwd == user_info_dict[new_user_id]['password']:
-            result_dict.update({'success' : True})
+
+    for info in user_info_dict:
+        if new_user_id == info['id']:
+            if new_user_passwd == info['password']:
+                result_dict["success"] = True
     return result_dict
 
 """

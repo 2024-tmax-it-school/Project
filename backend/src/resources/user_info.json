@@ -1,4 +1,4 @@
 [
-    { "id": "aa", "pw": "123", "name": "gg", "favorite": ["Action"] },
+    { "id": "aa", "password": "123", "name": "gg", "favorite": ["Action"] },
     { "id": "abcd", "password": "1234", "name": "cm", "favorite": [] }
 ]
