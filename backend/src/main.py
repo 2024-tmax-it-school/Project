@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from inspect import signature
 from urllib.parse import parse_qs, urlparse
 
-from utils.auth import choice_favorite, edit_user, login, register
+from utils.auth import choice_favorite, edit_user, login, register, get_my_page
 from utils.error import ErrorCode
 from utils.json_io import dict_to_json_data, json_data_to_dict
 from utils.rank import get_ranking
@@ -76,8 +76,10 @@ class BankServer(BaseHTTPRequestHandler):
                 result = get_review(service_query['movie_id'][0])
             else:
                 result = self.throw_error(ErrorCode.ERROR_INVALID_QUERY_PARAM)        
-        # elif service_name == "/my_page" :
-            #result = get_my_page(service_query['user_id'][0])
+        elif service_name == "/my_page" :
+            result = get_my_page(service_query['user_id'][0])
+        elif service_name == '/edit_my_page' :
+            result = edit_user(service_query['user_id'][0], service_query)
             
         # 서비스에 따라, 적절한 메소드를 호출한다.
         if result:

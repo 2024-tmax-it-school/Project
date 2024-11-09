@@ -1,8 +1,1 @@
-[
-    {
-        "id": "aa",
-        "pw": "123",
-        "name": "gg",
-        "favorite": []
-    }
-]
+[{"id": "aa", "pw": "123", "name": "gg", "favorite": []}, {"id": "abcd", "password": "1234", "name": "cm", "favorite": []}]

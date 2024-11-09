@@ -9,16 +9,16 @@ new_user_info
 {
     'id' : 아이디,
     'password' : 비밀번호
-	
+	'name' : 이름
 }
 
 user_info.json
-{
- id:
- pw:
- name:
- favorite : [ ]
-}
+    {
+    id:
+    pw:
+    name:
+    favorite : [ ]
+    }
 
 reply
 {
@@ -28,7 +28,7 @@ reply
 """
 def register(new_user_info : dict) -> dict:
     # 사용자 정보를 불러온다.
-    user_info_dict = json_file_to_dict()
+    user_info_dict = json_file_to_dict(user_info_path)
     result_dict : dict = {'success' : True}
     if user_info_dict==None:
         return result_dict
@@ -37,7 +37,7 @@ def register(new_user_info : dict) -> dict:
         result_dict.update({'success' : False})
 
     else:
-        user_info_dict[new_user_id] = new_user_info
+        user_info_dict.append({'id' : new_user_info['id'], 'password' : new_user_info['password'], 'name' : new_user_info['name'], 'favorite':[]})
 
     dict_to_json_file(user_info_path, user_info_dict)
     return result_dict
@@ -45,7 +45,7 @@ def register(new_user_info : dict) -> dict:
 """
 로그인을 수행하는 메소드
 
-new_user_info 
+new_user_info
 {
     'id' : 아이디,
     'password' : 비밀번호
@@ -131,4 +131,31 @@ def edit_user(user_id, edit_item_dict:dict):
             user_info_dict[user_id][key] = value
     result_dict.update({'success' : True})
     dict_to_json_file(user_info_path, user_info_dict)
+    return result_dict
+
+"""
+user_id
+
+user_info.json
+{
+ id:
+ pw:
+ name:
+ favorite : [ ]
+}
+
+reply
+{
+ id:
+ name:
+ favorite : [ ]
+}
+
+"""
+def get_my_page(user_id):
+    user_info_dict = json_file_to_dict(user_info_path)
+    result_dict={'success':False}
+    if user_info_dict==None:
+        return result_dict
+    result_dict.update({'success' : True, 'id':user_id, 'name':user_info_dict[user_id]['name'], 'favorite':user_info_dict[user_id]['favorite']})
     return result_dict
