@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import "./SignUp.css";
+import "./SignIn.css";
 import axiosInstance from "utils/axiosInstance";
 import { useNavigate } from "react-router-dom";
 
-function SignUp() {
+function SignIn() {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    name: "",
     id: "",
     password: "",
   });
@@ -22,38 +21,23 @@ function SignUp() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // 여기서 회원가입 처리 로직을 추가할 수 있습니다.
-    console.log("회원가입 정보:", formData);
 
-    const res = await axiosInstance.post("/register", formData);
+    const res = await axiosInstance.post("/login", formData);
 
     if (res.data.success) {
       sessionStorage.setItem("user_id", formData.id);
+
       navigate("/ranking");
     } else {
-      alert("회원가입에 실패했습니다. 다시 시도해주세요.");
+      alert("로그인에 실패했습니다. 다시 시도해주세요.");
     }
-
-    console.log(res);
   };
 
   return (
-    <div className="SignUp">
-      <div className="signUp-container">
-        <h2>회원가입</h2>
-        <form className="signUp-form" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">이름</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="이름을 입력하세요"
-              required
-            />
-          </div>
+    <div className="SignIn">
+      <div className="SignIn-container">
+        <h2>로그인</h2>
+        <form className="SignIn-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="id">아이디</label>
             <input
@@ -79,7 +63,7 @@ function SignUp() {
             />
           </div>
           <button type="submit" className="submit-btn">
-            회원가입
+            로그인
           </button>
         </form>
       </div>
@@ -87,4 +71,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default SignIn;

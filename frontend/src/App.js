@@ -5,6 +5,7 @@ import Ranking from "./pages/Ranking/Ranking";
 import MyPage from "./pages/MyPage/MyPage";
 import MovieDetail from "./pages/MovieDetail/MovieDetail";
 import SignUp from "./pages/SignUp/SignUp";
+import SignIn from "./pages/SignIn/SignIn";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
             <Route path="/ranking" element={<Ranking />} />
             <Route path="/mypage" element={<MyPage />} />
             <Route path="/detail/:id" element={<MovieDetail />} />
-            <Route path="/signin" element={<MovieDetail />} />
+            <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
           </Route>
         </Routes>
