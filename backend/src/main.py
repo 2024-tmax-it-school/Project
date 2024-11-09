@@ -1,3 +1,4 @@
+import urllib.parse
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from inspect import signature
 from urllib.parse import parse_qs, urlparse
@@ -50,7 +51,6 @@ class BankServer(BaseHTTPRequestHandler):
     def handle_review(self, dict_data, segments):
         if len(segments) > 1:
             action = segments[1]
-            print(action)
             if action == 'edit':
                 return edit_review(dict_data)
             elif action == 'register':
@@ -79,7 +79,10 @@ class BankServer(BaseHTTPRequestHandler):
         elif service_name == "my_page" :
             result = get_my_page(service_query['user_id'][0])
         elif service_name == 'rank':
-            result = get_ranking(service_query['sort'][0], bool(int(service_query['reverse'][0])))
+            cookie_header = self.headers.get('Cookie')
+            cookies = urllib.parse.parse_qs(cookie_header)
+            user_id = cookies.get('id', ['없음'])[0]
+            result = get_ranking(service_query['sort'][0], bool(int(service_query['reverse'][0])), user_id)
 
         # 서비스에 따라, 적절한 메소드를 호출한다.
         if result:
@@ -96,7 +99,6 @@ class BankServer(BaseHTTPRequestHandler):
         result = {}
         segments = service_path.strip('/').split('/')
         service_name = segments[0]
-        print(service_name)
         # 서비스별 메소드 맵핑을 딕셔너리로 관리
         service_methods = {
             'register': register,
@@ -114,16 +116,11 @@ class BankServer(BaseHTTPRequestHandler):
                 result = service_methods[service_name](dict_data, segments)
             else:
                 result = service_methods[service_name](dict_data)
+                if service_name == "login" :
+                    self.send_header('Set-Cookie', f'id={dict_data["id"]}')  # 쿠키 설정
+                    self.end_headers()
         else:
             result = self.throw_error(ErrorCode.ERROR_INVALID_SERVICE)
-
-        # elif service_name == '/favorite':
-        #     favorit_lst=[]
-        #     result=choice_favorite()
-        # elif service_name == '/edit':
-        #     edited={}
-        #     result=edit_user()
-        print(result)
         if result:
             result_data = dict_to_json_data(result)
             self.wfile.write(result_data.encode('utf-8'))
