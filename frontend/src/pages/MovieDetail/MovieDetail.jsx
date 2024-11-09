@@ -21,7 +21,7 @@ export default function MovieDetail() {
       <div className="poster">
         <img
           className="posterImage"
-          src={process.env.PUBLIC_URL + `/images/test.jpg`}
+          src={process.env.PUBLIC_URL + `/images/${movieDetail.movie_id}.jpg`}
           alt="poster"
         />
       </div>

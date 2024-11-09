@@ -12,8 +12,7 @@ function MovieItem({ detail }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <img
-        // src={process.env.PUBLIC_URL + `/images/${detail.movie_id}.jpg`}
-        src={process.env.PUBLIC_URL + `/images/test.jpg`}
+        src={process.env.PUBLIC_URL + `/images/${detail.movie_id}.jpg`}
         alt="movieImage"
       />
       {isHovered && (
