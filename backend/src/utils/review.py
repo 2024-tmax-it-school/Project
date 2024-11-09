@@ -21,7 +21,7 @@ movie_path = 'backend/src/resources/boxoffice.json'
 # 특정 영화 ID에 대한 리뷰를 가져오는 함수
 def get_review(movie_id: str):
     review_json = json_file_to_dict(review_path)
-    movie_json = json_file_to_dict(review_path)
+    movie_json = json_file_to_dict(movie_path)
     result = { "success" : False}
 
     if movie_json==None or review_json==None:
@@ -39,6 +39,13 @@ def get_review(movie_id: str):
 # 리뷰를 등록하는 함수
 def register_review(data: dict):
     movie_json = json_file_to_dict(review_path)
+    for review in movie_json:
+        if review.get("movie_id") == data.get("movie_id") and review.get("user_id") == data.get("user_id"):
+            return {
+            'success' : False,
+            'message' : '같은 아이디로 리뷰가 등록되어있습니다.'
+        } #만약 user_id가 중복된다면
+
     movie_json.append(data)
     dict_to_json_file(review_path, movie_json)
 
@@ -47,6 +54,8 @@ def register_review(data: dict):
         'message': '리뷰가 등록되었습니다.'
     }
     
+
+
 # 리뷰를 수정하는 함수
 def edit_review(data: dict):
     movie_json = json_file_to_dict(review_path)
@@ -70,6 +79,7 @@ def delete_review(movie_id: int, user_id: int):
     movie_json = [review for review in movie_json if not (review.get("movie_id") == str(movie_id) and review.get("user_id") == str(user_id))]
     
     success = len(movie_json) < original_length
+    dict_to_json_file(review_path, movie_json)
 
     if success:
         return {

@@ -5,8 +5,7 @@ import Rating from "@mui/material/Rating";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import StarIcon from "@mui/icons-material/Star";
-import { axiosInstance } from "utils/axiosInstance";
-import axios from "axios";
+import axiosInstance from "utils/axiosInstance";
 
 export default function MovieDetail() {
   const movieDetail = {
@@ -30,6 +29,12 @@ export default function MovieDetail() {
     const res = await axiosInstance.get(
       "http://localhost:8080/rank?sort=movie_name&reverse=0"
     );
+
+    axiosInstance.get("");
+    axiosInstance.post("/url", {
+      id: "aaa",
+      pw: "aaa",
+    });
 
     console.log(res);
   };
@@ -103,6 +108,8 @@ export default function MovieDetail() {
             </div>
           </div>
         </div>
+
+        <div className="horizontalLine" />
       </div>
     </div>
   );

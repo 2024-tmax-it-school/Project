@@ -34,6 +34,10 @@ def register(new_user_info : dict) -> dict:
     result_dict : dict = {'success' : True}
     if user_info_dict==None:
         return result_dict
+    for value in user_info_dict:
+        if value['id']==new_user_info['id']:
+            result_dict.update({'success' : False})
+            return result_dict
     new_user_id = new_user_info['id']
     if new_user_id in user_info_dict:
         result_dict.update({'success' : False})
@@ -112,7 +116,7 @@ def choice_favorite(user_id, favorite_lst:list):
     return result_dict
 
 """
-user_id, edit_item_dict={name: , favorite:[]}
+edit_item_dict={id: ,name: , favorite:[]}
 
 user_info.json
 {
@@ -128,11 +132,14 @@ reply
 }
 
 """
-def edit_user(user_id, edit_item_dict:dict):
+def edit_user(edit_item_dict:dict):
     user_info_dict = json_file_to_dict(user_info_path)
     result_dict={'success':False}
-    for key, value in edit_item_dict.items():
-            user_info_dict[user_id][key] = value
+    for i in range(0,len(user_info_dict)+1):
+        if user_info_dict[i]['id']==edit_item_dict['id']:
+            user_info_dict[i]['name']=edit_item_dict['name']
+            user_info_dict[i]['favorite']=edit_item_dict['favorite']
+            break
     result_dict.update({'success' : True})
     dict_to_json_file(user_info_path, user_info_dict)
     return result_dict
@@ -161,5 +168,12 @@ def get_my_page(user_id):
     result_dict={'success':False}
     if user_info_dict==None:
         return result_dict
-    result_dict.update({'success' : True, 'id':user_id, 'name':user_info_dict[user_id]['name'], 'favorite':user_info_dict[user_id]['favorite']})
+    for i in range(0,len(user_info_dict)+1):
+        if user_info_dict[i]['id']==user_id:
+            break
+    result_dict.update({'success' : True,
+        'id':user_info_dict[i]['id'],
+        'name':user_info_dict[i]['name'],
+        'favorite':user_info_dict[i]['favorite']
+    })
     return result_dict
