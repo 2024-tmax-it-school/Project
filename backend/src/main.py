@@ -71,18 +71,17 @@ class BankServer(BaseHTTPRequestHandler):
         segments = service_path.strip('/').split('/')
         service_name = segments[0]
         
-        if service_name == '/review':
+        if service_name == 'review':
             if 'movie_id' in service_query:
                 result = get_review(service_query['movie_id'][0])
             else:
                 result = self.throw_error(ErrorCode.ERROR_INVALID_QUERY_PARAM)        
-        elif service_name == "/my_page" :
+        elif service_name == "my_page" :
             result = get_my_page(service_query['user_id'][0])
-        elif service_name == '/rank':
-            result = get_ranking(service_query['sort'][0], service_query['reverse'][0])
-        elif service_name == '/edit_my_page' :
+        elif service_name == 'rank':
+            result = get_ranking(service_query['sort'][0], bool(int(service_query['reverse'][0])))
+        elif service_name == 'edit_my_page' :
             result = edit_user(service_query['user_id'][0], service_query)
-            
         # 서비스에 따라, 적절한 메소드를 호출한다.
         if result:
             result_data = dict_to_json_data(result)
