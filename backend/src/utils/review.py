@@ -24,14 +24,18 @@ def get_review(movie_id: str):
     movie_json = json_file_to_dict(movie_path)
     result = { "success" : False}
 
-    if movie_json==None or review_json==None:
+    if movie_json==None:
         return result
     
+    result['success'] = True
+
     for value in movie_json:
         if value['movie_id']==movie_id:
             result = value
-            result['success'] = True
-            result["reviews"] = [review for review in review_json if review.get("movie_id") == str(movie_id)]
+            if review_json!=None:
+                result["reviews"] = [review for review in review_json if review.get("movie_id") == str(movie_id)]
+            else :
+                result["reviews"] = []
             return result
     
     return result
