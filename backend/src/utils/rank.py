@@ -36,18 +36,18 @@ movie_path = 'backend/src/resources/boxoffice.json'
 review_path =  'backend/src/resources/review.json'
 
 
-boxoffice_json = {}
-movie_rate = {}
-review_json = {}
-rate = []
-rewiew = {}
+# boxoffice_json = {}
+# movie_rate = {}
+# review_json = {}
+# rate = []
+# rewiew = {}
 
 
-def calculate_rate(movie_data: dict) :
-    global boxoffice_json
-    boxoffice_json = json_file_to_dict(movie_path)
-    global review_json
-    review_json = json_file_to_dict(movie_path)
+# def calculate_rate(movie_data: dict) :
+#     global boxoffice_json
+#     boxoffice_json = json_file_to_dict(movie_path)
+#     global review_json
+#     review_json = json_file_to_dict(movie_path)
 
 
 
@@ -75,32 +75,45 @@ def calculate_rate() :
 
     result = reduce(reducer, review_json, {})
     # {movie : {sum : 평점 합, count : 리뷰 갯수}}
+    average_ratings = {movie : values['sum'] / values['count'] for movie, values in result.items()}
+    
 
-    average_ratings = {movie: values['sum'] / values['count'] for movie, values in result.items()}
+
+    
 
     # {'영화1': 4, '영화2' : 5}
 
 
 
+
+
     #TODO movie_list에 average_ratings의 key값과 일치하는 영화에 평균별점 필드로 values를 넣어주기
     #TODO 영화이름 찾기 & 포문
+    print(average_ratings)
+
+    for movie in movie_list: 
+        movie_id = movie['movie_id']
+
+        rating = average_ratings[movie_id]
+
+        print(movie)
+
+        # if(movie[movie_id] == movie_id):
+        #     movie['avg_rate'] = rating
+                
+    print(movie_list)    
+
+
+
+
 
     # if average_ratings['movie'] in movie_list['movie_id']:
     #     movie_list['movie_id'].update({'avg_rate' : average_ratings['movie']})
-    """
+   
 
-    average_ratings 의 영화 이름 찾기 ->
-
-    """
-    for average_ratings[movie] in movie_list:
-        # {'movie_id': '111', 'movie_name': '완벽한 타인', 'release_date': '2018-10-31', 'take': '44356976474', 'attendance': '5294154', 'screen': '1325', 'screenings': '143075', 'representative_nationality': '한국', 'nationality': '한국', 'distributor': '롯데컬처웍스(주)롯데엔터테인먼트'}
-        
-        review[movie_id] = average_ratings[movie]['movie_id']
-        rating = average_ratings[movie_id] 
 
                 
         # movie_list 에서 movie_id을 찾음. movie_id을 찾은 딕셔너리에 avg_rate을 집어 넣음
-        movie.update({'avg_rate' : rating})
 
 # JSON 파일 열고 읽기
 
@@ -127,6 +140,6 @@ def get_ranking(sort : str = 'movie_id', _reverse : bool = False) :
 # get_ranking("movie_id", False)
 # get_ranking("avg_rate", True)
 
-#calculate_rate()
+calculate_rate()
 
 # print(boxoffice_json)

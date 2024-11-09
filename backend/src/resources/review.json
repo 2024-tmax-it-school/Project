@@ -3,6 +3,7 @@
     { "user_id": "", "movie_id": "1", "comment": "", "rate": 3 },
     { "user_id": "", "movie_id": "2", "comment": "", "rate": 4 },
     { "user_id": "", "movie_id": "3", "comment": "", "rate": 5 },
+    { "user_id": "", "movie_id": "4", "comment": "", "rate": 5 },
     { "user_id": "aaa", "movie_id": "123", "comment": "123", "rate": 5 },
     { "user_id": "a2a", "movie_id": "123", "comment": "123343", "rate": 1 },
     { "user_id": "a2a", "movie_id": "123", "comment": "123343", "rate": 1 }
