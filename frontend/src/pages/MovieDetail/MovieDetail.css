@@ -2,6 +2,7 @@
   width: inherit;
   height: 100vh;
   position: relative;
+  align-items: center;
 }
 
 .MovieDetail .cover {
@@ -49,6 +50,8 @@
   top: 200px;
   left: 200px;
   margin: 0 auto;
+  width: 800px;
+  background-color: tomato;
 }
 
 .MovieDetail .posterImage {
@@ -89,4 +92,8 @@
   font-size: 20px;
   font-weight: 500;
   gap: 8px;
+}
+
+.MovieDetail .horizontalLine {
+  width: 100%;
 }
