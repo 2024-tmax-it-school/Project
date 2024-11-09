@@ -7,16 +7,25 @@ function MovieItem({ detail }) {
 
   return (
     <li
-      className={`MovieItem ${isHovered && "hovered "}`}
+      className="MovieItem"
       onMouseOver={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
+      <img
+        src={process.env.PUBLIC_URL + `/images/${detail.movie_id}.jpg`}
+        alt="movieImage"
+      />
       {isHovered && (
         <div className="hovered">
-          <span>{detail.영화명}</span>
-          <span>{detail.개봉일}</span>
-          <span>{detail.나라}</span>
-          <span>{detail.배급사}</span>
+          <div className="titleContainer">
+            <span className="title">{detail.movie_name}</span>
+            <span className="date">개봉일: {detail.release_date}</span>
+          </div>
+
+          <div className="detailContainer">
+            <span>{detail.nationality}</span>
+            <span>{detail.distributor}</span>
+          </div>
         </div>
       )}
     </li>

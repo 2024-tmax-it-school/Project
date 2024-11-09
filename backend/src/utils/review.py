@@ -13,7 +13,22 @@ review = {
     "rate": ""
 }
 
+# result = { "success" : False}
+
 review_path = 'backend/src/resources/review.json'
+# 특정 영화 ID에 대한 영화 상세페이지를 가져오는 함수
+def get_detail(movie_id: str):
+    movie_json = json_file_to_dict(review_path)
+    result = { "success" : False}
+    if movie_json==None:
+        return result
+
+    for value in movie_json.values():
+        if value['movie_id']==movie_id:
+            result = value
+            result['success'] = True
+            return result
+
 
 # 특정 영화 ID에 대한 리뷰를 가져오는 함수
 def get_review(movie_id: str):
