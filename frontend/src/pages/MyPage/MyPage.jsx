@@ -3,24 +3,51 @@ import "./MyPage.css";
 import UserData from "./UserDatas/UserData";
 import UpDateButton from "./UserDatas/Button/UpDateButton";
 import profileImage from "assets/profile.png";
+import axiosInstance from "utils/axiosInstance";
+import { Favorite } from "@material-ui/icons";
 
-// 기본 데이터를 로컬 스토리지에서 가져오거나 없으면 기본 데이터 사용
 export default function MyPage() {
-  // 로컬 스토리지에서 가져오거나 기본값 설정
-  const [dummyData, setDummyData] = useState(() => {
-    const savedData = localStorage.getItem("dummyData");
-    return savedData
-      ? JSON.parse(savedData)
-      : [{ id: 123, name: "성민혁", favorite: ["로맨스", "코미디"] }]; // 배열로 초기화
+  const [userData, setUserData] = useState({
+    id: "",
+    name: "",
+    favorite: [],
   });
 
   const [state, setState] = useState(true); // 수정 가능 여부
   const [text, setText] = useState("프로필 수정");
 
-  // dummyData 변경 시 로컬 스토리지에 저장
   useEffect(() => {
-    localStorage.setItem("dummyData", JSON.stringify(dummyData));
-  }, [dummyData]);
+    const user_id = sessionStorage.getItem("user_id");
+
+    if (user_id) {
+      const getUser = async () => {
+        const response = await axiosInstance(`my_page?user_id=${user_id}`);
+
+        console.log(response.data);
+
+        setUserData({
+          id: response.data.id,
+          name: response.data.name,
+          favorite: response.data.favorite,
+        });
+      };
+
+      getUser();
+    }
+  }, []);
+
+  // 외부 JSON 파일에서 데이터 로드
+  useEffect(() => {
+    // fetch를 사용해 외부 JSON 파일에서 데이터 가져오기
+    fetch("/data/userData.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setUserData(data); // 가져온 데이터를 userData 상태에 저장
+      })
+      .catch((error) =>
+        console.error("데이터를 가져오는 데 실패했습니다.", error)
+      );
+  }, []);
 
   const userUpdate = () => {
     if (state) {
@@ -29,14 +56,34 @@ export default function MyPage() {
     } else {
       setText("프로필 수정");
       setState(true); // 수정 가능으로 설정
+      handleUpDate();
     }
   };
 
+  const handleUpDate = async () => {
+    await axiosInstance.post("/edit", userData);
+  };
+
   // input 값 변경 시 호출
-  const handleInputChange = (e, field) => {
-    const newValue = e.target.value;
-    setDummyData((prevData) => {
-      return { ...prevData, [field]: newValue }; // 객체의 속성 수정
+  const handleInputChange = (newValue, field) => {
+    // const newValue = e.target.value;
+    setUserData((prevData) => ({
+      ...prevData,
+      [field]: newValue, // 해당 필드만 수정
+    }));
+  };
+
+  useEffect(() => {
+    console.log("userData", userData);
+  }, [userData]);
+
+  // 체크박스 상태 변경 시 호출
+  const handleCheckboxChange = (id, checked) => {
+    setUserData((prevData) => {
+      const updatedFavorites = checked
+        ? [...prevData.favorite, id] // 체크하면 추가
+        : prevData.favorite.filter((category) => category !== id); // 체크 해제하면 제거
+      return { ...prevData, favorite: updatedFavorites };
     });
   };
 
@@ -50,7 +97,7 @@ export default function MyPage() {
         </div>
         <div className="UserData">
           <UserData
-            user={dummyData} // dummyData를 객체로 넘김
+            user={userData} // dummyData를 객체로 넘김
             state={state}
             handleInputChange={handleInputChange} // input 변경 시 처리
           />
