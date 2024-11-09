@@ -1,9 +1,9 @@
 .Ranking {
   display: flex;
   justify-content: center;
+  box-sizing: inherit;
   align-items: center;
-  height: 100%;
-  padding-top: 360px;
+  height: 100vh - 64px;
   margin: 64px;
 }
 
