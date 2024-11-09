@@ -10,7 +10,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Action"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "조선의 명장 이순신이 13척의 배로 일본의 330척 대군을 상대한 실제 역사적 배경을 바탕으로 한 영화."
     },
     {
         "movie_id": "2",
@@ -23,7 +24,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Comedy"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "어설픈 마약반 형사들이 잠입수사를 위해 치킨집을 운영하게 되면서 벌어지는 웃음을 자아내는 이야기를 담은 코미디 영화."
     },
     {
         "movie_id": "3",
@@ -36,7 +38,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Action"],
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
+        "distributor": "롯데쇼핑㈜롯데엔터테인먼트",
+        "description": "사후 세계에서 벌어지는 재판을 중심으로, 죽음을 맞이한 주인공이 49일 간의 심판을 받는 이야기를 그린 판타지 액션."
     },
     {
         "movie_id": "4",
@@ -49,7 +52,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Drama"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "한국전쟁 이후의 경제 성장과 그 속에서 가족을 지키기 위해 노력하는 한 남자의 이야기를 그린 감동적인 드라마."
     },
     {
         "movie_id": "5",
@@ -62,7 +66,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사",
+        "description": "마블 시네마틱 유니버스(MCU)의 22편 영화로, 어벤져스 팀이 타노스를 물리치기 위한 최후의 결전을 벌이는 이야기."
     },
     {
         "movie_id": "6",
@@ -75,7 +80,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Animation", "Drama"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사",
+        "description": "엘사와 안나 자매가 잃어버린 과거의 비밀을 풀고, 그 힘의 근원인 신비한 숲을 찾아 떠나는 모험을 그린 애니메이션."
     },
     {
         "movie_id": "7",
@@ -88,7 +94,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "부패한 재벌가의 아들과 경찰의 이야기를 다룬 액션 영화로, 정의를 위해 싸우는 경찰들의 복수극."
     },
     {
         "movie_id": "8",
@@ -101,7 +108,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action"],
-        "distributor": "주식회사 해리슨앤컴퍼니,이십세기폭스코리아(주)"
+        "distributor": "주식회사 해리슨앤컴퍼니,이십세기폭스코리아(주)",
+        "description": "지구에서의 자원을 채굴하기 위해 나비족의 세계를 침략하는 인간들의 이야기를 그린 판타지와 액션이 결합된 영화."
     },
     {
         "movie_id": "9",
@@ -114,7 +122,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action", "Drama"],
-        "distributor": "플러스엠 엔터테인먼트"
+        "distributor": "플러스엠 엔터테인먼트",
+        "description": "1980년 광주 민주화 운동을 배경으로 한 사건을 다룬 드라마와 액션이 결합된 영화."
     },
     {
         "movie_id": "10",
@@ -127,7 +136,8 @@
         "representative_nationality": "한국",
         "nationality": "한국,홍콩",
         "genre": ["Action"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "금괴를 훔치기 위한 범죄자들의 협력과 배신을 그린 범죄 액션 영화."
     },
     {
         "movie_id": "11",
@@ -140,7 +150,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Drama"],
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
+        "distributor": "(주)넥스트엔터테인먼트월드(NEW)",
+        "description": "정신지체가 있는 아버지가 딸과 함께 보내는 감동적인 이야기를 다룬 드라마."
     },
     {
         "movie_id": "12",
@@ -153,47 +164,52 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Drama"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사",
+        "description": "디즈니의 애니메이션 '알라딘'을 실사화한 영화로, 가난한 청년 알라딘이 마법의 램프를 손에 넣고 신데렐라 같은 판타지 모험을 펼치는 이야기."
     },
     {
         "movie_id": "13",
         "movie_name": "암살",
         "release_date": "2015-07-22",
         "take": "98472466681",
-        "attendance": "12707330",
-        "screen": "1519",
-        "screenings": "175332",
+        "attendance": "12838385",
+        "screen": "1090",
+        "screenings": "157000",
         "representative_nationality": "한국",
         "nationality": "한국",
-        "genre": ["Action"],
-        "distributor": "(주)쇼박스"
+        "genre": ["Action", "Drama"],
+        "distributor": "(주)롯데엔터테인먼트",
+        "description": "일제강점기, 독립운동을 위한 암살 작전을 벌이는 여성 요원들의 이야기를 그린 역사적 액션 드라마."
     },
     {
         "movie_id": "14",
-        "movie_name": "범죄도시2",
-        "release_date": "2022-05-18",
-        "take": "131298796478",
-        "attendance": "12693415",
-        "screen": "2521",
-        "screenings": "355768",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "genre": ["Action"],
-        "distributor": "주식회사 에이비오엔터테인먼트,플러스엠 엔터테인먼트"
+        "movie_name": "겨울왕국",
+        "release_date": "2013-12-18",
+        "take": "100336587000",
+        "attendance": "10796367",
+        "screen": "987",
+        "screenings": "174383",
+        "representative_nationality": "미국",
+        "nationality": "미국",
+        "genre": ["Fantasy", "Animation"],
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사",
+        "description": "엘사와 안나 자매가 벌이는 겨울의 마법과 모험을 그린 디즈니의 애니메이션."
     },
     {
         "movie_id": "15",
-        "movie_name": "광해, 왕이 된 남자",
-        "release_date": "2012-09-13",
-        "take": "88913283469",
-        "attendance": "12324062",
-        "screen": "1001",
-        "screenings": "203464",
-        "representative_nationality": "한국",
-        "nationality": "한국",
-        "genre": ["Fantasy", "Action"],
-        "distributor": "(주)씨제이이엔엠"
+        "movie_name": "타이타닉",
+        "release_date": "1997-12-19",
+        "take": "101903968000",
+        "attendance": "10311779",
+        "screen": "700",
+        "screenings": "176000",
+        "representative_nationality": "미국",
+        "nationality": "미국",
+        "genre": ["Drama", "Romance"],
+        "distributor": "파라마운트 픽쳐스",
+        "description": "1912년 타이타닉 호의 침몰 사고를 배경으로 한, 승객들의 사랑과 삶을 그린 감동적인 로맨스 영화."
     },
+
     {
         "movie_id": "16",
         "movie_name": "신과함께-인과 연",
@@ -205,7 +221,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Action", "Drama"],
-        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트"
+        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트",
+        "description": "사후 세계에서 펼쳐지는 또 다른 이야기로, 죽은 자의 죄와 연대가 중심이 되어 펼쳐지는 판타지와 드라마의 조화."
     },
     {
         "movie_id": "17",
@@ -218,7 +235,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "1980년 광주 민주화 운동을 다룬 영화로, 택시운전사가 겪는 정치적 혼란과 그 속에서 진실을 마주하는 이야기를 그린 작품."
     },
     {
         "movie_id": "18",
@@ -231,7 +249,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Horror"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "사람들의 죽음을 둘러싼 신비로운 사건을 중심으로 벌어지는 공포와 미스터리의 판타지."
     },
     {
         "movie_id": "19",
@@ -244,7 +263,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Horror", "Action", "Drama"],
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
+        "distributor": "(주)넥스트엔터테인먼트월드(NEW)",
+        "description": "좀비 바이러스가 퍼지는 가운데, 부산으로 향하는 기차 안에서 벌어지는 생존을 위한 사투를 그린 공포 액션."
     },
     {
         "movie_id": "20",
@@ -257,7 +277,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action", "Thriller"],
-        "distributor": "주식회사 에이비오엔터테인먼트,플러스엠 엔터테인먼트"
+        "distributor": "주식회사 에이비오엔터테인먼트,플러스엠 엔터테인먼트",
+        "description": "폭력적인 범죄 조직과 싸우는 강력계 형사의 치열한 액션과 스릴을 담은 범죄 스릴러."
     },
     {
         "movie_id": "21",
@@ -270,7 +291,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Drama"],
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
+        "distributor": "(주)넥스트엔터테인먼트월드(NEW)",
+        "description": "1980년대 군사정권 하에서 고문과 인권 침해를 다룬 사건을 변호하는 변호사의 이야기."
     },
     {
         "movie_id": "22",
@@ -283,7 +305,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Blockbuster", "Drama"],
-        "distributor": "CJ ENM"
+        "distributor": "CJ ENM",
+        "description": "해운대에서 발생한 쓰나미를 중심으로 펼쳐지는 긴박감 넘치는 재난 드라마."
     },
     {
         "movie_id": "23",
@@ -296,7 +319,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action", "Blockbuster"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사",
+        "description": "마블 시네마틱 유니버스(MCU)의 핵심적인 작품으로, 어벤져스와 그들의 동맹들이 우주적 위협에 맞서 싸우는 이야기."
     },
     {
         "movie_id": "24",
@@ -309,7 +333,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Thriller", "Drama"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "서울 한복판에서 괴물의 출현과 그로 인한 공포와 혼란을 그린 스릴러 영화."
     },
     {
         "movie_id": "25",
@@ -322,7 +347,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Blockbuster"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사",
+        "description": "제임스 카메론 감독의 '아바타' 후속작으로, 판도라의 바다를 배경으로 펼쳐지는 새로운 이야기와 모험."
     },
     {
         "movie_id": "26",
@@ -335,7 +361,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action", "Blockbuster"],
-        "distributor": "주식회사 에이비오엔터테인먼트,플러스엠 엔터테인먼트"
+        "distributor": "주식회사 에이비오엔터테인먼트,플러스엠 엔터테인먼트",
+        "description": "강력계 형사가 다시 한 번 범죄자들과 맞서 싸우는 액션 블록버스터."
     },
     {
         "movie_id": "27",
@@ -348,11 +375,12 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy"],
-        "distributor": "(주)씨제이이엔엠,(주)시네마서비스"
+        "distributor": "(주)씨제이이엔엠,(주)시네마서비스",
+        "description": "조선 시대, 한 무명의 광대가 왕의 곁에서 펼쳐지는 정치적 음모와 역사의 흐름에 휘말리는 이야기."
     },
     {
         "movie_id": "28",
-        "movie_name": "어벤져스: 에이지 오  브 울트론",
+        "movie_name": "어벤져스: 에이지 오브 울트론",
         "release_date": "2015-04-23",
         "take": "88645598646",
         "attendance": "10504487",
@@ -361,7 +389,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action", "Blockbuster"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사,월트디즈니컴퍼니코리아(주)"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사,월트디즈니컴퍼니코리아(주)",
+        "description": "어벤져스 팀이 인공지능 울트론의 위협에 맞서 싸우는 액션 영화."
     },
     {
         "movie_id": "29",
@@ -374,7 +403,8 @@
         "representative_nationality": "미국",
         "nationality": "미국,영국",
         "genre": ["Fantasy", "Blockbuster"],
-        "distributor": "워너브러더스 코리아(주)"
+        "distributor": "워너브러더스 코리아(주)",
+        "description": "우주 여행을 떠난 인류가 미래의 생존을 위해 고군분투하는 감동적이고 철학적인 SF 블록버스터."
     },
     {
         "movie_id": "30",
@@ -387,7 +417,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Animation"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사,소니픽쳐스릴리징월트디즈니스튜디오스코리아(주)"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사,소니픽쳐스릴리징월트디즈니스튜디오스코리아(주)",
+        "description": "자매 엘사와 안나의 겨울 마법과 함께 펼쳐지는 모험과 성장 이야기."
     },
     {
         "movie_id": "31",
@@ -400,7 +431,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Thriller"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "사회적 계층의 차이를 다룬 블랙 코미디와 스릴러가 결합된 영화."
     },
     {
         "movie_id": "32",
@@ -413,7 +445,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Drama"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사,이십세기폭스코리아(주)"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사,이십세기폭스코리아(주)",
+        "description": "퀸의 전설적인 리드 싱어 프레디 머큐리의 삶을 그린 감동적인 전기 영화."
     },
     {
         "movie_id": "33",
@@ -426,7 +459,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "형사 출신 변호사가 범죄 사건을 추적하며 펼치는 긴장감 넘치는 액션."
     },
     {
         "movie_id": "34",
@@ -439,7 +473,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Comedy", "Drama"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "화학 가스 테러로 인한 재난을 중심으로 펼쳐지는 유머와 드라마가 어우러진 생존 이야기."
     },
     {
         "movie_id": "35",
@@ -452,7 +487,8 @@
         "representative_nationality": "한국",
         "nationality": "한국,체코",
         "genre": ["Fantasy", "Blockbuster", "Action"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "전 세계가 얼어붙은 미래에서 열차를 타고 인류의 마지막 생존자들이 펼치는 스릴 넘치는 이야기."
     },
     {
         "movie_id": "36",
@@ -465,7 +501,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "조선 시대의 왕위를 두고 벌어지는 정치적 음모와 관상을 통해 사람들의 운명을 예측하는 이야기."
     },
     {
         "movie_id": "37",
@@ -478,7 +515,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action", "Blockbuster"],
-        "distributor": "소니픽쳐스릴리징월트디즈니스튜디오스코리아(주)"
+        "distributor": "소니픽쳐스릴리징월트디즈니스튜디오스코리아(주)",
+        "description": "아이언맨의 새로운 도전과 슈퍼히어로로서의 갈등을 다룬 액션 블록버스터."
     },
     {
         "movie_id": "38",
@@ -491,7 +529,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Animation"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사",
+        "description": "감정들이 살아 움직이는 세계에서 펼쳐지는 또 다른 성장 이야기."
     },
     {
         "movie_id": "39",
@@ -504,7 +543,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action", "Blockbuster"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사,월트디즈니컴퍼니코리아(주)"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사,월트디즈니컴퍼니코리아(주)",
+        "description": "어벤져스 팀 내에서 의견 충돌로 벌어지는 갈등과 분열을 그린 액션 블록버스터."
     },
     {
         "movie_id": "40",
@@ -517,7 +557,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Action"],
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
+        "distributor": "롯데쇼핑㈜롯데엔터테인먼트",
+        "description": "해적과 산적들이 펼치는 기상천외한 모험과 액션을 담은 재미있는 이야기."
     },
     {
         "movie_id": "41",
@@ -530,7 +571,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Drama"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "한 여자가 70대 할머니의 모습으로 젊어진 후, 과거의 기억을 되찾으려는 이야기를 그린 판타지 드라마."
     },
     {
         "movie_id": "42",
@@ -543,7 +585,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Blockbuster"],
-        "distributor": "(주)씨제이이엔엠,(주)덱스터스튜디오"
+        "distributor": "(주)씨제이이엔엠,(주)덱스터스튜디오",
+        "description": "백두산의 폭발을 막기 위해 동북아 각국이 협력하는 재난 블록버스터 영화."
     },
     {
         "movie_id": "43",
@@ -556,7 +599,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Action", "Blockbuster"],
-        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트"
+        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트",
+        "description": "탑건의 후속작으로, 매버릭(톰 크루즈)이 새로운 세대의 파일럿들과 함께 위험한 미션을 수행하는 액션 영화."
     },
     {
         "movie_id": "44",
@@ -569,7 +613,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Drama"],
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
+        "distributor": "롯데쇼핑㈜롯데엔터테인먼트",
+        "description": "과거에 아버지 역할을 했던 주인공이 예기치 않게 자녀를 만나는 과정을 그린 감동적인 가족 드라마."
     },
     {
         "movie_id": "45",
@@ -582,7 +627,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Drama"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "동계 스포츠인 스키점프의 국가대표 선발 과정을 그린 감동적인 스포츠 드라마."
     },
     {
         "movie_id": "46",
@@ -595,7 +641,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action", "Blockbuster"],
-        "distributor": "소니픽쳐스엔터테인먼트코리아주식회사극장배급지점"
+        "distributor": "소니픽쳐스엔터테인먼트코리아주식회사극장배급지점",
+        "description": "스파이더맨이 유럽에서의 여행 중에 마주한 새로운 적과의 전투를 그린 액션 블록버스터."
     },
     {
         "movie_id": "47",
@@ -608,7 +655,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "외계의 괴물들이 지구를 침공하며 벌어지는 대규모 전투를 그린 판타지 영화."
     },
     {
         "movie_id": "48",
@@ -621,7 +669,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action", "Drama"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "북한의 형사와 남한의 형사가 함께 국제 범죄를 추적하는 액션 드라마."
     },
     {
         "movie_id": "49",
@@ -634,7 +683,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Blockbuster"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "지구와 우주에서 벌어지는 최후의 전투를 그린 액션 블록버스터."
     },
     {
         "movie_id": "50",
@@ -647,7 +697,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Drama"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "히말라야 산맥을 배경으로 한 감동적인 실화를 바탕으로 한 드라마."
     },
     {
         "movie_id": "51",
@@ -660,11 +711,12 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action", "Blockbuster"],
-        "distributor": "소니픽쳐스엔터테인먼트코리아주식회사극장배급지점"
+        "distributor": "소니픽쳐스엔터테인먼트코리아주식회사극장배급지점",
+        "description": "멀티버스를 배경으로 스파이더맨들이 협력하여 새로운 적을 물리치는 액션 영화."
     },
     {
         "movie_id": "52",
-        "movie_name": "미션임파서블:고스트프로토콜",
+        "movie_name": "미션임파서블: 고스트프로토콜",
         "release_date": "2011-12-15",
         "take": "57302764500",
         "attendance": "7508991",
@@ -673,7 +725,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "이단(IMF) 요원들이 전 세계를 무대로 펼치는 첩보 작전을 그린 액션 블록버스터."
     },
     {
         "movie_id": "53",
@@ -686,7 +739,8 @@
         "representative_nationality": "한국",
         "nationality": "한국,미국",
         "genre": ["Action"],
-        "distributor": "워너브러더스 코리아(주)"
+        "distributor": "워너브러더스 코리아(주)",
+        "description": "일제강점기, 친일파와 독립운동가 사이에서 벌어지는 배신과 음모를 그린 스릴러 액션 영화."
     },
     {
         "movie_id": "54",
@@ -699,7 +753,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
+        "distributor": "롯데쇼핑㈜롯데엔터테인먼트",
+        "description": "조선 시대, 활을 이용한 전투와 전쟁을 그린 액션 영화."
     },
     {
         "movie_id": "55",
@@ -712,7 +767,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "강력한 범죄와의 싸움을 그린 액션 영화의 후속작."
     },
     {
         "movie_id": "56",
@@ -725,7 +781,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Blockbuster"],
-        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트,CJ ENM"
+        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트,CJ ENM",
+        "description": "외계 로봇들이 인간 사회에 나타나 싸우는 블록버스터."
     },
     {
         "movie_id": "57",
@@ -738,7 +795,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Blockbuster"],
-        "distributor": "CJ ENM"
+        "distributor": "CJ ENM",
+        "description": "트랜스포머 시리즈의 두 번째 작품, 로봇들의 전투가 계속되는 액션 영화."
     },
     {
         "movie_id": "58",
@@ -751,7 +809,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Drama"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "고등학교 시절의 친구들이 다시 만난 후, 과거의 추억을 되살리며 재결합하는 드라마."
     },
     {
         "movie_id": "59",
@@ -764,7 +823,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Blockbuster"],
-        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트"
+        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트",
+        "description": "임진왜란 당시, 한산도에서의 전투를 그린 역사적인 블록버스터."
     },
     {
         "movie_id": "60",
@@ -777,7 +837,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action", "Blockbuster"],
-        "distributor": "소니픽쳐스엔터테인먼트코리아주식회사극장배급지점"
+        "distributor": "소니픽쳐스엔터테인먼트코리아주식회사극장배급지점",
+        "description": "피터 파커가 고등학교 생활을 하며 새로운 영웅으로서의 책임을 지고, 과거의 스파이더맨 사건과 연결된 새로운 적을 맞서 싸우는 이야기를 그린 액션 영화."
     },
     {
         "movie_id": "61",
@@ -790,7 +851,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Drama", "Animation"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사",
+        "description": "불, 물, 공기, 흙의 네 원소가 살아있는 세계에서, 각 원소가 살아가는 방식과 그들 간의 갈등을 그린 애니메이션."
     },
     {
         "movie_id": "62",
@@ -803,7 +865,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "1987년 민주화 운동을 배경으로, 당시의 학생들과 시민들이 어떻게 체제에 맞서 싸웠는지를 그린 정치 드라마."
     },
     {
         "movie_id": "63",
@@ -816,7 +879,8 @@
         "representative_nationality": "한국",
         "nationality": "한국,독일",
         "genre": ["Action"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "독일 베를린에서 펼쳐지는 간첩 작전과 국가 간의 음모를 그린 액션 스릴러 영화."
     },
     {
         "movie_id": "64",
@@ -829,7 +893,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "고위층의 부패와 권력 게임을 그린 범죄 액션 영화로, 대기업의 부패와 그에 맞서는 이들의 싸움을 다룬다."
     },
     {
         "movie_id": "65",
@@ -842,7 +907,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Blockbuster"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "터널 붕괴 사고에 갇힌 주인공이 살아남기 위해 싸우는 이야기를 그린 재난 블록버스터."
     },
     {
         "movie_id": "66",
@@ -855,7 +921,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action", "Blockbuster"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사,한국소니픽쳐스릴리징브에나비스타영화㈜"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사,한국소니픽쳐스릴리징브에나비스타영화㈜",
+        "description": "세계의 히어로들이 한자리에 모여 지구를 위협하는 외계인과 싸우는 액션 블록버스터."
     },
     {
         "movie_id": "67",
@@ -868,7 +935,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "부패한 정치인과 기업인들이 얽힌 음모를 파헤치는 이야기로, 내부자들의 숨겨진 진실을 다룬 스릴러 액션."
     },
     {
         "movie_id": "68",
@@ -881,7 +949,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Blockbuster"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "한국 전쟁 중 인천상륙작전의 역사적인 승리를 그린 대규모 전쟁 블록버스터."
     },
     {
         "movie_id": "69",
@@ -894,7 +963,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "북한과 남한의 형사들이 협력하여 국제 범죄 조직을 추적하는 액션 영화."
     },
     {
         "movie_id": "70",
@@ -907,7 +977,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Comedy", "Drama"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "형사와 도박꾼이 우연히 몸이 바뀌며 벌어지는 유쾌한 이야기를 그린 코미디 드라마."
     },
     {
         "movie_id": "71",
@@ -920,7 +991,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Action", "Comedy", "Drama"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "북한의 특수요원이 남한에 잠입하면서 벌어지는 코믹하고 감동적인 이야기를 그린 액션 드라마."
     },
     {
         "movie_id": "72",
@@ -933,7 +1005,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "플러스엠 엔터테인먼트,(주)키위미디어그룹"
+        "distributor": "플러스엠 엔터테인먼트,(주)키위미디어그룹",
+        "description": "강력범죄를 다루는 경찰과 조직 폭력배 간의 치열한 싸움을 그린 범죄 액션 영화."
     },
     {
         "movie_id": "73",
@@ -946,7 +1019,8 @@
         "representative_nationality": "한국",
         "nationality": "한국,미국",
         "genre": ["Fantasy", "Horror", "Thriller"],
-        "distributor": "이십세기폭스코리아(주)"
+        "distributor": "이십세기폭스코리아(주)",
+        "description": "괴상한 사건들이 연쇄적으로 일어나는 작은 마을에서, 주민들이 겪는 공포와 미스터리를 그린 호러 스릴러."
     },
     {
         "movie_id": "74",
@@ -959,7 +1033,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action", "Thriller"],
-        "distributor": "CJ ENM"
+        "distributor": "CJ ENM",
+        "description": "1980년 광주 민주화 운동을 배경으로, 군과 정부의 억압과 맞서는 시민들의 이야기를 그린 스릴러."
     },
     {
         "movie_id": "75",
@@ -972,7 +1047,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Comedy"],
-        "distributor": "CJ ENM"
+        "distributor": "CJ ENM",
+        "description": "세 명의 주인공이 보물찾기를 하면서 벌어지는 웃음을 자아내는 액션 코미디."
     },
     {
         "movie_id": "76",
@@ -985,7 +1061,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Drama"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "인간과 늑대의 본능을 가진 소년이 사랑을 통해 인간성을 되찾아가는 감동적인 이야기."
     },
     {
         "movie_id": "77",
@@ -998,7 +1075,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "(주)씨제이이엔엠"
+        "distributor": "(주)씨제이이엔엠",
+        "description": "일제 강점기 군함도에서 강제로 끌려간 사람들의 탈출과 저항을 그린 역사적인 액션 영화."
     },
     {
         "movie_id": "78",
@@ -1011,7 +1089,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action", "Blockbuster"],
-        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트"
+        "distributor": "롯데컬처웍스(주)롯데엔터테인먼트",
+        "description": "이단적인 CIA 요원과 그를 추적하는 특수 임무가 얽히면서 벌어지는 거대한 스릴과 액션을 그린 블록버스터."
     },
     {
         "movie_id": "79",
@@ -1024,7 +1103,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Comedy", "Drama"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "전쟁 중인 북한과 남한의 군인들이 우연히 동막골이라는 마을에 모여 이루어지는 감동적이고 웃긴 이야기."
     },
     {
         "movie_id": "80",
@@ -1037,7 +1117,8 @@
         "representative_nationality": "미국",
         "nationality": "미국,영국",
         "genre": ["Fantasy", "Action", "Blockbuster"],
-        "distributor": "워너브러더스 코리아(주)"
+        "distributor": "워너브러더스 코리아(주)",
+        "description": "배트맨이 고향 고담시를 지키기 위해 거대한 악당 '베인'과 싸우는 마지막 전투를 그린 액션 블록버스터."
     },
     {
         "movie_id": "81",
@@ -1050,7 +1131,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Action"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "조선시대의 비극적인 왕세자 사도세자의 삶과 그가 겪은 고통과 갈등을 다룬 역사 드라마. 부자간의 복잡한 감정선과 정치적인 음모가 중심이 되는 이야기."
     },
     {
         "movie_id": "82",
@@ -1063,7 +1145,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "CJ ENM"
+        "distributor": "CJ ENM",
+        "description": "전직 특수요원이 된 남자가, 납치된 소녀를 구하기 위해 범죄 조직과 싸우는 액션 스릴러. 과거의 아픔을 간직한 채, 그녀를 구하기 위한 전투가 펼쳐진다."
     },
     {
         "movie_id": "83",
@@ -1076,7 +1159,8 @@
         "representative_nationality": "미국",
         "nationality": "미국,영국",
         "genre": ["Fantasy", "Action"],
-        "distributor": "이십세기폭스코리아(주)"
+        "distributor": "이십세기폭스코리아(주)",
+        "description": "영국의 비밀정보조직 '킹스맨'의 새로운 멤버가 되어 국제적인 음모를 저지하려는 젊은 남자의 모험을 그린 액션 영화."
     },
     {
         "movie_id": "84",
@@ -1089,7 +1173,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action", "Blockbuster"],
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
+        "distributor": "롯데쇼핑㈜롯데엔터테인먼트",
+        "description": "Ethan Hunt와 IMF 요원들이 국제적인 위협을 막기 위해 비밀 조직 '더 싱크'와 싸우는 액션 블록버스터."
     },
     {
         "movie_id": "85",
@@ -1102,7 +1187,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Comedy", "Drama"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "미모가 뛰어난 여배우가 외모로 인한 스트레스를 겪으며 진정한 아름다움의 의미를 찾기 위한 과정을 그린 코미디 드라마."
     },
     {
         "movie_id": "86",
@@ -1115,7 +1201,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Comedy"],
-        "distributor": "CJ ENM"
+        "distributor": "CJ ENM",
+        "description": "전설 속의 도술사 '전우치'가 불사의 마법과 싸우며 펼쳐지는 판타지 코미디 영화."
     },
     {
         "movie_id": "87",
@@ -1128,7 +1215,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Drama", "Blockbuster"],
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
+        "distributor": "(주)넥스트엔터테인먼트월드(NEW)",
+        "description": "2010년 연평도에서 벌어진 해전과 그 당시의 한국 해군들의 용감한 전투를 그린 전쟁 드라마."
     },
     {
         "movie_id": "88",
@@ -1141,7 +1229,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Action"],
-        "distributor": "(주)디스테이션,워너브러더스 코리아(주)"
+        "distributor": "(주)디스테이션,워너브러더스 코리아(주)",
+        "description": "꿈 속에서 사람들의 아이디어를 훔치는 기술을 가진 전문가가 점점 더 복잡한 꿈의 세계로 빠져드는 스릴러."
     },
     {
         "movie_id": "89",
@@ -1154,7 +1243,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Action"],
-        "distributor": "유니버설픽쳐스인터내셔널 코리아(유)"
+        "distributor": "유니버설픽쳐스인터내셔널 코리아(유)",
+        "description": "프랑스 혁명 후 혼란 속에서 정의와 구속을 찾으려는 한 남자의 감동적인 이야기를 그린 뮤지컬 드라마."
     },
     {
         "movie_id": "90",
@@ -1167,7 +1257,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Blockbuster"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사",
+        "description": "닥터 스트레인지가 멀티버스를 넘나들며 다양한 현실과 싸우는 스펙터클한 액션 블록버스터."
     },
     {
         "movie_id": "91",
@@ -1180,7 +1271,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Blockbuster"],
-        "distributor": "월트디즈니컴퍼니코리아 유한책임회사"
+        "distributor": "월트디즈니컴퍼니코리아 유한책임회사",
+        "description": "우주의 가장 강력한 히어로로 성장한 캡틴 마블의 기원을 다룬 영화. 지구와 우주를 지키기 위한 그녀의 첫 번째 전투."
     },
     {
         "movie_id": "92",
@@ -1193,7 +1285,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "CJ ENM"
+        "distributor": "CJ ENM",
+        "description": "도박의 세계에 빠진 주인공이 수많은 위험 속에서 자신만의 전략을 펼쳐가는 범죄 드라마."
     },
     {
         "movie_id": "93",
@@ -1206,7 +1299,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Thriller", "Blockbuster"],
-        "distributor": "유니버설픽쳐스인터내셔널 코리아(유)"
+        "distributor": "유니버설픽쳐스인터내셔널 코리아(유)",
+        "description": "쥬라기 공원에서 다시 나타난 공룡들이 펼치는 스펙터클한 생존 전투를 그린 블록버스터."
     },
     {
         "movie_id": "94",
@@ -1219,7 +1313,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Comedy", "Drama"],
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
+        "distributor": "롯데쇼핑㈜롯데엔터테인먼트",
+        "description": "두 청년 경찰이 실종된 여학생을 찾기 위해 범죄의 세계로 뛰어드는 액션 코미디."
     },
     {
         "movie_id": "95",
@@ -1232,7 +1327,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Horror", "Thriller"],
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
+        "distributor": "(주)넥스트엔터테인먼트월드(NEW)",
+        "description": "한 가족이 이사한 집에서 벌어지는 이상한 일들. 가족들이 겪는 심리적 공포를 중심으로 전개되는 스릴러."
     },
     {
         "movie_id": "96",
@@ -1245,7 +1341,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Drama"],
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
+        "distributor": "롯데쇼핑㈜롯데엔터테인먼트",
+        "description": "조선 마지막 황녀 덕혜옹주의 비극적인 삶과 그녀의 이야기를 그린 감동적인 역사 드라마."
     },
     {
         "movie_id": "97",
@@ -1258,7 +1355,8 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Fantasy", "Blockbuster"],
-        "distributor": "롯데쇼핑㈜롯데엔터테인먼트"
+        "distributor": "롯데쇼핑㈜롯데엔터테인먼트",
+        "description": "뉴스 방송 중 발생한 폭탄 테러 사건을 중계하는 기자의 긴박한 상황을 그린 실시간 스릴러."
     },
     {
         "movie_id": "98",
@@ -1271,7 +1369,8 @@
         "representative_nationality": "일본",
         "nationality": "일본",
         "genre": ["Fantasy", "Animation"],
-        "distributor": "(주)쇼박스"
+        "distributor": "(주)쇼박스",
+        "description": "재난을 막기 위해 ‘문’을 닫아야 하는 소녀가 벌이는 모험을 그린 애니메이션 영화."
     },
     {
         "movie_id": "99",
@@ -1284,7 +1383,8 @@
         "representative_nationality": "미국",
         "nationality": "미국",
         "genre": ["Fantasy", "Blockbuster", "Thriller"],
-        "distributor": "유니버설픽쳐스인터내셔널 코리아(유)"
+        "distributor": "유니버설픽쳐스인터내셔널 코리아(유)",
+        "description": "쥬라기 공원의 재건과 함께, 공룡들이 다시 한 번 인간과 대립하는 초대형 블록버스터."
     },
     {
         "movie_id": "100",
@@ -1297,6 +1397,7 @@
         "representative_nationality": "한국",
         "nationality": "한국",
         "genre": ["Action"],
-        "distributor": "(주)넥스트엔터테인먼트월드(NEW)"
+        "distributor": "(주)넥스트엔터테인먼트월드(NEW)",
+        "description": "도시의 치안을 책임지는 경찰과 범죄 조직 간의 팽팽한 대결을 그린 액션 스릴러."
     }
 ]
