@@ -32,7 +32,7 @@ def register(new_user_info : dict) -> dict:
     # 사용자 정보를 불러온다.
     user_info_dict = json_file_to_dict(user_info_path)
     result_dict : dict = {'success' : True}
-    if user_info_dict==None:
+    if user_info_dict==[]:
         return result_dict
     for value in user_info_dict:
         if value['id']==new_user_info['id']:
@@ -77,7 +77,7 @@ def login(new_user_info : dict) -> dict:
     # TODO user_info에 DATA가 없는경우, 고려해야함
     user_info_dict = json_file_to_dict(user_info_path)
     result_dict :dict = {'success' : False}
-    if user_info_dict==None:
+    if user_info_dict==[]:
         return result_dict
     new_user_id = new_user_info['id']
     new_user_passwd = new_user_info['password']
@@ -105,15 +105,6 @@ reply
 }
 
 """
-def choice_favorite(user_id, favorite_lst:list):
-    user_info_dict = json_file_to_dict(user_info_path)
-    result_dict={'success':False}
-    if(user_info_dict[user_id]!=[]):
-        return result_dict
-    user_info_dict[user_id]["favorite"]=favorite_lst
-    result_dict.update({'success' : True})
-    dict_to_json_file(user_info_path, user_info_dict)
-    return result_dict
 
 """
 edit_item_dict={id: ,name: , favorite:[]}
@@ -134,6 +125,8 @@ reply
 """
 def edit_user(edit_item_dict:dict):
     user_info_dict = json_file_to_dict(user_info_path)
+    if user_info_dict==[]:
+        return {'success':False}
     result_dict={'success':False}
     for i in range(0,len(user_info_dict)+1):
         if user_info_dict[i]['id']==edit_item_dict['id']:
@@ -165,6 +158,9 @@ reply
 """
 def get_my_page(user_id):
     user_info_dict = json_file_to_dict(user_info_path)
+    if user_info_dict==[]:
+        return {'success':False}
+    
     result_dict={'success':False}
     if user_info_dict==None:
         return result_dict

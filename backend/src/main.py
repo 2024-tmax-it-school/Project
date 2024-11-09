@@ -3,7 +3,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from inspect import signature
 from urllib.parse import parse_qs, urlparse
 
-from utils.auth import choice_favorite, edit_user, get_my_page, login, register
+from utils.auth import edit_user, get_my_page, login, register
 from utils.error import ErrorCode
 from utils.json_io import dict_to_json_data, json_data_to_dict
 from utils.rank import get_ranking

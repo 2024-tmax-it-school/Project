@@ -24,7 +24,7 @@ def get_review(movie_id: str):
     movie_json = json_file_to_dict(movie_path)
     result = { "success" : False}
 
-    if movie_json==None:
+    if movie_json==[]:
         return result
     
     result['success'] = True
@@ -32,7 +32,7 @@ def get_review(movie_id: str):
     for value in movie_json:
         if value['movie_id']==movie_id:
             result = value
-            if review_json!=None:
+            if review_json!=[]:
                 result["reviews"] = [review for review in review_json if review.get("movie_id") == str(movie_id)]
             else :
                 result["reviews"] = []
@@ -43,6 +43,8 @@ def get_review(movie_id: str):
 # 리뷰를 등록하는 함수
 def register_review(data: dict):
     movie_json = json_file_to_dict(review_path)
+    result = {"success": False}
+    
     for review in movie_json:
         if review.get("movie_id") == data.get("movie_id") and review.get("user_id") == data.get("user_id"):
             return {
@@ -63,6 +65,9 @@ def register_review(data: dict):
 # 리뷰를 수정하는 함수
 def edit_review(data: dict):
     movie_json = json_file_to_dict(review_path)
+    result = {"success": False}
+    if movie_json == []:
+        return result
     
     for review in movie_json:
         if review.get("movie_id") == data.get("movie_id") and review.get("user_id") == data.get("user_id"):
@@ -77,8 +82,11 @@ def edit_review(data: dict):
 
 # 리뷰를 삭제하는 함수
 def delete_review(movie_id: int, user_id: int):
-    #동작 안함
     movie_json = json_file_to_dict(review_path)
+    result = {"success": False}
+    if movie_json == []:
+        return result
+    
     original_length = len(movie_json)
     movie_json = [review for review in movie_json if not (review.get("movie_id") == str(movie_id) and review.get("user_id") == str(user_id))]
     
