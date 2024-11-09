@@ -32,6 +32,8 @@ def dict_to_json_data(data : dict) -> str:
 JSON 파일을 파이썬 딕셔너리로 읽어오는 메소드
 """
 def json_file_to_dict(path : str) -> dict:
+    if os.stat(path).st_size == 0 :
+        return None
     with file_open(path, 'r') as f:
         return json.load(f)
 

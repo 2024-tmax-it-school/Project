@@ -8,3 +8,14 @@
 
   font-family: "Noto Sans KR", sans-serif;
 }
+
+.App * {
+  list-style-type: none;
+}
+
+.App button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+}
