@@ -42,14 +42,21 @@ def calculate_rate() :
 def recommend_movies(movies : dict, id: str, _reverse: bool):
     user_info = json_file_to_dict(user_info_path)
     user = {}
+
     for info in user_info :
+
         if info["id"] == id :
             user = info
             break
+        elif info['id'] not in id:
+            return sorted(movies, key=lambda x: int(x["movie_id"]), reverse=_reverse)
+
     user_preferences = user["favorite"]
+
     if user_preferences == []:
         return sorted(movies, key=lambda x: int(x["movie_id"]), reverse=_reverse)
 
+    
     overlap_movies = [
     {
         "movie": movie,
@@ -79,6 +86,7 @@ def get_ranking(sort : str, _reverse : bool, id :str) :
 
     elif sort == "avg_rate":
         boxoffice_json = sorted(boxoffice_json, key=itemgetter("avg_rate"), reverse=_reverse)
+
     elif sort == "recommend":
         boxoffice_json = recommend_movies(boxoffice_json, id, _reverse); 
     

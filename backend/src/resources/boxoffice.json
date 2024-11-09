@@ -12,7 +12,7 @@
         "genre": ["Fantasy", "Action"],
         "distributor": "(주)씨제이이엔엠",
         "description": "조선의 명장 이순신이 13척의 배로 일본의 330척 대군을 상대한 실제 역사적 배경을 바탕으로 한 영화.",
-        "avg_rate": 4
+        "avg_rate": 0
     },
     {
         "movie_id": "2",
@@ -27,7 +27,7 @@
         "genre": ["Comedy"],
         "distributor": "(주)씨제이이엔엠",
         "description": "어설픈 마약반 형사들이 잠입수사를 위해 치킨집을 운영하게 되면서 벌어지는 웃음을 자아내는 이야기를 담은 코미디 영화.",
-        "avg_rate": 4
+        "avg_rate": 0
     },
     {
         "movie_id": "3",
@@ -42,7 +42,7 @@
         "genre": ["Fantasy", "Action"],
         "distributor": "롯데쇼핑㈜롯데엔터테인먼트",
         "description": "사후 세계에서 벌어지는 재판을 중심으로, 죽음을 맞이한 주인공이 49일 간의 심판을 받는 이야기를 그린 판타지 액션.",
-        "avg_rate": 5
+        "avg_rate": 0
     },
     {
         "movie_id": "4",
@@ -57,7 +57,7 @@
         "genre": ["Fantasy", "Drama"],
         "distributor": "(주)씨제이이엔엠",
         "description": "한국전쟁 이후의 경제 성장과 그 속에서 가족을 지키기 위해 노력하는 한 남자의 이야기를 그린 감동적인 드라마.",
-        "avg_rate": 5
+        "avg_rate": 0
     },
     {
         "movie_id": "5",
@@ -1497,6 +1497,6 @@
         "genre": ["Action"],
         "distributor": "(주)넥스트엔터테인먼트월드(NEW)",
         "description": "도시의 치안을 책임지는 경찰과 범죄 조직 간의 팽팽한 대결을 그린 액션 스릴러.",
-        "avg_rate": 2
+        "avg_rate": 0
     }
 ]
