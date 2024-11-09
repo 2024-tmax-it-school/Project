@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from inspect import signature
 from urllib.parse import parse_qs, urlparse
 
-from utils.auth import choice_favorite, edit_user, login, register, get_my_page
+from utils.auth import choice_favorite, edit_user, get_my_page, login, register
 from utils.error import ErrorCode
 from utils.json_io import dict_to_json_data, json_data_to_dict
 from utils.rank import get_ranking
@@ -71,7 +71,7 @@ class BankServer(BaseHTTPRequestHandler):
         segments = service_path.strip('/').split('/')
         service_name = segments[0]
         
-        if service_name == 'review':
+        if service_name == 'detail':
             if 'movie_id' in service_query:
                 result = get_review(service_query['movie_id'][0])
             else:
@@ -80,8 +80,7 @@ class BankServer(BaseHTTPRequestHandler):
             result = get_my_page(service_query['user_id'][0])
         elif service_name == 'rank':
             result = get_ranking(service_query['sort'][0], bool(int(service_query['reverse'][0])))
-        elif service_name == 'edit_my_page' :
-            result = edit_user(service_query['user_id'][0], service_query)
+
         # 서비스에 따라, 적절한 메소드를 호출한다.
         if result:
             result_data = dict_to_json_data(result)
@@ -102,7 +101,8 @@ class BankServer(BaseHTTPRequestHandler):
         service_methods = {
             'register': register,
             'login': login,
-            'review': self.handle_review
+            'detail': self.handle_review,
+            'edit': edit_user
         }
         # 서비스 이름에 해당하는 함수 호출
         if service_name in service_methods:

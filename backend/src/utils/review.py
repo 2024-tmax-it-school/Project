@@ -16,27 +16,25 @@ review = {
 # result = { "success" : False}
 
 review_path = 'backend/src/resources/review.json'
-# 특정 영화 ID에 대한 영화 상세페이지를 가져오는 함수
-def get_detail(movie_id: str):
-    movie_json = json_file_to_dict(review_path)
-    result = { "success" : False}
-    if movie_json==None:
-        return result
-
-    for value in movie_json.values():
-        if value['movie_id']==movie_id:
-            result = value
-            result['success'] = True
-            return result
-
+movie_path = 'backend/src/resources/boxoffice.json'
 
 # 특정 영화 ID에 대한 리뷰를 가져오는 함수
 def get_review(movie_id: str):
+    review_json = json_file_to_dict(review_path)
     movie_json = json_file_to_dict(review_path)
-    print(movie_json)
-    print(movie_id)
-    filtered_reviews = [review for review in movie_json if review.get("movie_id") == str(movie_id)]
-    return filtered_reviews
+    result = { "success" : False}
+
+    if movie_json==None or review_json==None:
+        return result
+    
+    for value in movie_json:
+        if value['movie_id']==movie_id:
+            result = value
+            result['success'] = True
+            result["reviews"] = [review for review in review_json if review.get("movie_id") == str(movie_id)]
+            return result
+    
+    return result
 
 # 리뷰를 등록하는 함수
 def register_review(data: dict):
