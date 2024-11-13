@@ -255,7 +255,7 @@ export default function MovieDetail() {
         <div className="reviewContainer">
           {reviews.map((item) => (
             <div key={item}>
-              <CommentItem reviewItem={item} />
+              <CommentItem reviewItem={item} getReviews={getReviews} />
             </div>
           ))}
         </div>

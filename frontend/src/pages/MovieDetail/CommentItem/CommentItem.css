@@ -1,2 +1,87 @@
-.CommentItem {
+.CommentItem .reviewWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  min-height: 100px;
+  color: #f5f6f7;
+}
+
+.CommentItem .reviewHeader {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.CommentItem .userName {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.CommentItem .userId {
+  font-size: 12px;
+  color: #d3d5da;
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 2px;
+}
+
+.CommentItem .editButton {
+  color: #d3d5da;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.CommentItem .deleteButton {
+  color: #ef4433;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.CommentItem .reviewContent {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.CommentItem .commentContainer {
+  width: calc(100% - 250px);
+
+  display: flex;
+  gap: 16px;
+  padding: 32px;
+  padding-bottom: 64px;
+}
+
+.CommentItem .commentWrapper {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 100px);
+  gap: 8px;
+}
+
+.CommentItem .commentRate {
+  display: flex;
+  gap: 8px;
+  font-size: 20px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f5f6f7;
+}
+
+.CommentItem .commentWrapper .commentInput {
+  min-height: 160px;
+
+  width: calc(100% - 100px);
+}
+
+.CommentItem .commentInput {
+  min-height: 160px;
+
+  width: calc(100% - 100px);
 }
