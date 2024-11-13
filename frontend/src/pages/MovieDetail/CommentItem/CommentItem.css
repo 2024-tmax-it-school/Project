@@ -35,7 +35,7 @@
 }
 
 .CommentItem .deleteButton {
-  color: #ef4433;
+  color: #f2695c;
 
   &:hover {
     text-decoration: underline;
