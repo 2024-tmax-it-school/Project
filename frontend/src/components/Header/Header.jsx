@@ -27,6 +27,7 @@ function Header() {
 
   const logOut = async () => {
     axiosInstance("/logout");
+    sessionStorage.removeItem("user_id");
     navigate("/signin");
   };
 
