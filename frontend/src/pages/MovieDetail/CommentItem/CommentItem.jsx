@@ -54,7 +54,15 @@ export default function CommentItem({ reviewItem, getReviews }) {
   };
 
   const handleClickDelete = async () => {
-    await axiosInstance.post(`/detail/${movie_id}/delete`, reviewData);
+    const response = await axiosInstance.post(
+      `/detail/${movie_id}/delete`,
+      reviewData
+    );
+
+    if (response.data.message) {
+      alert(response.data.message);
+    }
+
     getReviews();
   };
 
