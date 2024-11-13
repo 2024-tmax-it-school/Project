@@ -1,5 +1,6 @@
 import urllib.parse
 from http.server import BaseHTTPRequestHandler, HTTPServer
+from inspect import signature
 from urllib.parse import parse_qs, urlparse
 
 from utils.auth import edit_user, get_my_page, login, register
