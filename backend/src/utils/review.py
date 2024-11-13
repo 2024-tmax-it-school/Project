@@ -4,6 +4,7 @@ from urllib.parse import parse_qs, urlparse
 
 from utils.json_io import (dict_to_json_file, file_open, json_data_to_dict,
                            json_file_to_dict)
+from utils.rank import calculate_rate
 
 # 기본 리뷰 구조
 review = {
@@ -54,7 +55,8 @@ def register_review(data: dict):
 
     movie_json.append(data)
     dict_to_json_file(review_path, movie_json)
-
+    calculate_rate()
+    
     return {
         'success': True,
         'message': '리뷰가 등록되었습니다.'
@@ -74,6 +76,7 @@ def edit_review(data: dict):
             review.update(data)  # 리뷰 내용 업데이트
             dict_to_json_file(review_path, movie_json)
             return {'success': True, 'message': '리뷰가 수정되었습니다.'}
+    calculate_rate()
 
     return {
         'success': False,
@@ -94,6 +97,7 @@ def delete_review(movie_id: int, user_id: int):
     dict_to_json_file(review_path, movie_json)
 
     if success:
+        calculate_rate()
         return {
             'success': True,
             'message': '리뷰가 삭제되었습니다.'

@@ -69,6 +69,7 @@ def get_ranking(sort : str, _reverse : bool) :
    
 
     global boxoffice_json
+    calculate_rate()
     boxoffice_json = json_file_to_dict(movie_path)
     
     if sort == "movie_name":
@@ -78,7 +79,6 @@ def get_ranking(sort : str, _reverse : bool) :
         boxoffice_json = sorted(boxoffice_json, key=lambda x: int(x["movie_id"]), reverse=_reverse)
 
     elif sort == "avg_rate":
-        calculate_rate()
         boxoffice_json = sorted(boxoffice_json, key=itemgetter("avg_rate"), reverse=not(_reverse))
     # elif sort == "recommend":
     #     boxoffice_json = recommend_movies(boxoffice_json, id, _reverse); 
