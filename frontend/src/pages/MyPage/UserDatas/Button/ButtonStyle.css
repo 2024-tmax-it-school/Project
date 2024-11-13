@@ -1,15 +1,17 @@
-.upDateBtn:hover {
-  background-color: #1250e0;
-}
 .upDateBtn {
   width: 300px;
   height: 50px;
   font-size: 1.2rem;
   border-radius: 8px;
-  color: white;
+  color: #1250e0;
   box-shadow: 0 2px 2px gray;
   background-color: #1512e0;
   border: none;
+
+  &:hover {
+    color: white;
+    background-color: #1250e0;
+  }
 }
 
 .checkBoxStyle {
