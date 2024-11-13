@@ -26,8 +26,8 @@ function Header() {
   };
 
   const logOut = async () => {
-    await axiosInstance("/logout");
-    navigate("/login");
+    axiosInstance("/logout");
+    navigate("/signin");
   };
 
   const navigateToPage = (path) => {
