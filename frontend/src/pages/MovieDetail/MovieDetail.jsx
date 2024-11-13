@@ -2,13 +2,12 @@ import React, { useEffect, useState } from "react";
 
 import "./MovieDetail.css";
 import Rating from "@mui/material/Rating";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import StarIcon from "@mui/icons-material/Star";
 import axiosInstance from "utils/axiosInstance";
-import { resolvePath, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Button } from "@mui/material";
 import ModeEditIcon from "@mui/icons-material/ModeEdit";
+import CommentItem from "./CommentItem/CommentItem";
 
 export default function MovieDetail() {
   const location = useLocation();
@@ -53,9 +52,11 @@ export default function MovieDetail() {
   };
 
   const getReviews = async () => {
-    const response = await axiosInstance.get(`/get_review?movie_id=${movieId}`);
+    const response = await axiosInstance.get(
+      `/detail/${movieId}?movie_id=${movieId}`
+    );
     if (response.data) {
-      setReviews(response.data);
+      setReviews(response.data.reviews ?? []);
     }
   };
 
@@ -65,8 +66,6 @@ export default function MovieDetail() {
     if (user_id) {
       const getUser = async () => {
         const response = await axiosInstance.get(`my_page?user_id=${user_id}`);
-
-        console.log(response.data);
 
         setUserInfo({
           id: response.data.id,
@@ -101,10 +100,12 @@ export default function MovieDetail() {
       rate: reviewData.rate,
     });
 
-    console.log(response.data);
-
     if (response.data.message) {
       alert(response.data.message);
+    }
+
+    if (response.data.success) {
+      getReviews();
     }
 
     setIsEdit(false);
@@ -253,41 +254,10 @@ export default function MovieDetail() {
 
         <div className="reviewContainer">
           {reviews.map((item) => (
-            <div className="reviewWrapper">
-              <div className="reviewHeader">
-                <span className="userName">{item.user_id ?? ""}</span>
-              </div>
-              <div className="reviewContent"></div>
+            <div key={item}>
+              <CommentItem reviewItem={item} />
             </div>
           ))}
-        </div>
-
-        <div className="reviewContainer">
-          <div className="reviewWrapper">
-            <div className="reviewHeader">
-              <span className="userName">{"TESTID"}</span>
-              {isEdit ? (
-                <Rating
-                  name="simple-controlled"
-                  value={2}
-                  onChange={handleChangeRate}
-                />
-              ) : (
-                <Rating value={2} readOnly />
-              )}
-              <button className="editButton">수정하기</button>
-            </div>
-            <div className="reviewContent">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              ullamcorper, est at pretium luctus, lacus elit gravida ante, sed
-              suscipit dolor eros quis erat. In rhoncus orci nibh, non fringilla
-              urna sollicitudin ac. Nullam sed aliquet nisl. In sed justo eu
-              magna varius faucibus non sit amet quam. Sed non dictum risus.
-              Fusce iaculis justo a molestie congue. Suspendisse potenti. Duis
-              suscipit, neque sit amet ultrices cursus, erat urna euismod dolor,
-              ac tempus risus enim varius nisl. Vivamus tempus dignissim
-            </div>
-          </div>
         </div>
       </div>
     </div>

@@ -5,9 +5,10 @@ import { useState } from "react";
 
 import Rating from "@mui/material/Rating";
 import axiosInstance from "utils/axiosInstance";
-import { isFormElement } from "react-router-dom/dist/dom";
 
 export default function CommentItem({ reviewItem }) {
+  const loggedInID = sessionStorage.getItem("user_id");
+
   const { user_id, movie_id, comment, rate } = reviewItem;
 
   const [isEdit, setIsEdit] = useState(false);
@@ -34,7 +35,7 @@ export default function CommentItem({ reviewItem }) {
   };
 
   const editReview = async () => {
-    await axiosInstance.post(`/edit`, {
+    await axiosInstance.post(`/detail/${movie_id}/edit`, {
       user_id: user_id,
       movie_id: movie_id,
       comment: reviewData.comment,
@@ -62,9 +63,11 @@ export default function CommentItem({ reviewItem }) {
         ) : (
           <Rating value={rate} readOnly />
         )}
-        <button className="editButton" onClick={handleClickEdit}>
-          {isEdit ? "수정완료" : "수정하기"}
-        </button>
+        {loggedInID === user_id && (
+          <button className="editButton" onClick={handleClickEdit}>
+            {isEdit ? "수정완료" : "수정하기"}
+          </button>
+        )}
       </div>
       <div className="reviewContent">
         {isEdit ? (
