@@ -6,7 +6,9 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import StarIcon from "@mui/icons-material/Star";
 import axiosInstance from "utils/axiosInstance";
-import { useLocation } from "react-router-dom";
+import { resolvePath, useLocation } from "react-router-dom";
+import { Button } from "@mui/material";
+import ModeEditIcon from "@mui/icons-material/ModeEdit";
 
 export default function MovieDetail() {
   const location = useLocation();
@@ -27,17 +29,100 @@ export default function MovieDetail() {
     description: "",
     avg_rate: 1,
   });
+  const [reviews, setReviews] = useState([]);
+  const [userInfo, setUserInfo] = useState({
+    id: "test",
+    name: "김김김",
+    favorite: [],
+  });
+  const [isEdit, setIsEdit] = useState(false);
+
+  const [reviewData, setReviewData] = useState({
+    user_id: "",
+    movie_id: "",
+    comment: "",
+    rate: 0,
+  });
 
   const getDetail = async () => {
-    const response = await axiosInstance(`/detail?movie_id=${movieId}`);
+    const response = await axiosInstance.get(`/detail?movie_id=${movieId}`);
 
     if (response.data) {
       setMovieDetail(response.data);
     }
   };
 
+  const getReviews = async () => {
+    const response = await axiosInstance.get(`/get_review?movie_id=${movieId}`);
+    if (response.data) {
+      setReviews(response.data);
+    }
+  };
+
+  const getUserInfo = () => {
+    const user_id = sessionStorage.getItem("user_id");
+
+    if (user_id) {
+      const getUser = async () => {
+        const response = await axiosInstance.get(`my_page?user_id=${user_id}`);
+
+        console.log(response.data);
+
+        setUserInfo({
+          id: response.data.id,
+          name: response.data.name,
+          favorite: response.data.favorite,
+        });
+      };
+
+      getUser();
+    }
+  };
+
+  const handleChangeRate = (_, newRate) => {
+    setReviewData((prev) => ({
+      ...prev,
+      rate: newRate,
+    }));
+  };
+
+  const handleChangeComment = (e) => {
+    setReviewData((prev) => ({
+      ...prev,
+      comment: e.target.value,
+    }));
+  };
+
+  const handleClickWrite = async () => {
+    const response = await axiosInstance.post(`/detail/${movieId}/register`, {
+      user_id: userInfo.id,
+      movie_id: movieId,
+      comment: reviewData.comment,
+      rate: reviewData.rate,
+    });
+
+    console.log(response.data);
+
+    if (response.data.message) {
+      alert(response.data.message);
+    }
+
+    setIsEdit(false);
+    setReviewData({
+      user_id: "",
+      movie_id: "",
+      comment: "",
+      rate: 0,
+    });
+  };
+
   useEffect(() => {
     getDetail();
+    getReviews();
+  }, [movieId]);
+
+  useEffect(() => {
+    getUserInfo();
   }, []);
 
   return (
@@ -106,10 +191,104 @@ export default function MovieDetail() {
                   }}
                 />
               </div>
+
+              <Button
+                variant="text"
+                onClick={() => {
+                  setIsEdit(true);
+                }}
+                endIcon={<ModeEditIcon />}
+                size="large"
+                sx={{
+                  width: "150px",
+                  height: "80px",
+                  color: "#fff",
+                  fontSize: "18px",
+                  display: "flex",
+                  alignSelf: "flex-end",
+                  justifyContent: "flex-end",
+                }}
+              >
+                리뷰 작성
+              </Button>
             </div>
           </div>
         </div>
         <div className="horizontalLine" />
+
+        {isEdit && (
+          <>
+            <div className="commentContainer">
+              <div className="commentWrapper">
+                <div className="commentRate">
+                  <span>별점</span>
+                  <Rating
+                    name="simple-controlled"
+                    value={reviewData.rate}
+                    onChange={handleChangeRate}
+                  />
+                </div>
+
+                <textarea
+                  className="commentInput"
+                  onChange={handleChangeComment}
+                />
+              </div>
+
+              <Button
+                variant="contained"
+                onClick={handleClickWrite}
+                sx={{
+                  color: "#fff",
+                  fontSize: "16px",
+                  width: "150px",
+                  height: "40px",
+                }}
+              >
+                작성 완료
+              </Button>
+            </div>
+          </>
+        )}
+
+        <div className="reviewContainer">
+          {reviews.map((item) => (
+            <div className="reviewWrapper">
+              <div className="reviewHeader">
+                <span className="userName">{item.user_id ?? ""}</span>
+              </div>
+              <div className="reviewContent"></div>
+            </div>
+          ))}
+        </div>
+
+        <div className="reviewContainer">
+          <div className="reviewWrapper">
+            <div className="reviewHeader">
+              <span className="userName">{"TESTID"}</span>
+              {isEdit ? (
+                <Rating
+                  name="simple-controlled"
+                  value={2}
+                  onChange={handleChangeRate}
+                />
+              ) : (
+                <Rating value={2} readOnly />
+              )}
+              <button className="editButton">수정하기</button>
+            </div>
+            <div className="reviewContent">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+              ullamcorper, est at pretium luctus, lacus elit gravida ante, sed
+              suscipit dolor eros quis erat. In rhoncus orci nibh, non fringilla
+              urna sollicitudin ac. Nullam sed aliquet nisl. In sed justo eu
+              magna varius faucibus non sit amet quam. Sed non dictum risus.
+              Fusce iaculis justo a molestie congue. Suspendisse potenti. Duis
+              suscipit, neque sit amet ultrices cursus, erat urna euismod dolor,
+              ac tempus risus enim varius nisl. Vivamus tempus dignissim
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
