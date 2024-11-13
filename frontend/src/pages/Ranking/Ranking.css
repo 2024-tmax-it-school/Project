@@ -1,10 +1,27 @@
 .Ranking {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   box-sizing: inherit;
   align-items: center;
   height: 100vh - 64px;
   margin: 64px;
+}
+
+.Ranking .header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 16px;
+  margin-bottom: 8px;
+}
+
+.Ranking .select {
+  display: flex;
+  gap: 16px;
+  width: fit-content;
+  min-width: 300px;
 }
 
 .Ranking .movie_container {

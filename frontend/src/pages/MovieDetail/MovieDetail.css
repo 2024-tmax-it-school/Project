@@ -1,6 +1,7 @@
 .MovieDetail {
-  width: inherit;
+  width: 100%;
   height: 100vh;
+  box-sizing: border-box;
   position: relative;
   align-items: center;
 }
@@ -12,7 +13,7 @@
 }
 
 .MovieDetail .coverImage {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -43,15 +44,22 @@
 
 .MovieDetail .content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 36px;
   position: fixed;
-  top: 200px;
-  left: 200px;
   margin: 0 auto;
-  width: 800px;
-  background-color: tomato;
+  top: 200px;
+  width: 100%;
+}
+
+.MovieDetail .topSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 36px;
 }
 
 .MovieDetail .posterImage {
@@ -77,6 +85,7 @@
   align-items: flex-start;
   gap: 8px;
   color: #f5f6f7;
+  white-space: nowrap;
 }
 
 .MovieDetail h1 {
@@ -95,5 +104,7 @@
 }
 
 .MovieDetail .horizontalLine {
-  width: 100%;
+  width: calc(100% - 200px);
+  border-top: 2px solid #f5f6f7;
+  margin: 32px 0px;
 }
