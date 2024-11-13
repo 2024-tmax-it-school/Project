@@ -45,7 +45,7 @@ class BankServer(BaseHTTPRequestHandler):
     # review 관련 처리
     def handle_review(self, dict_data, segments):
         if len(segments) > 1:
-            action = segments[1]
+            action = segments[2]
             if action == 'edit':
                 return edit_review(dict_data)
             elif action == 'register':
