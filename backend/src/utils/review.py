@@ -16,8 +16,8 @@ review = {
 
 # result = { "success" : False}
 
-review_path = 'backend/src/resources/review.json'
-movie_path = 'backend/src/resources/boxoffice.json'
+review_path = '../resources/review.json'
+movie_path = '../resources/boxoffice.json'
 
 # 특정 영화 ID에 대한 리뷰를 가져오는 함수
 def get_review(movie_id: str):

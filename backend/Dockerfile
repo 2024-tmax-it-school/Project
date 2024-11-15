@@ -10,6 +10,11 @@ WORKDIR /app/src
 
 # 백엔드 포트 노출
 EXPOSE 8080
+COPY src/resources/user_info.json /app/resources/user_info.json
+COPY src/resources/boxoffice.json /app/resources/boxoffice.json
+COPY src/resources/review.json /app/resources/review.json
 
 # 백엔드 서버 실행
 CMD ["python3", "main.py"]
+
+

@@ -1,27 +1,30 @@
-version: "3.8"
 services:
-  backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-    ports:
-      - "8080:8080"
-    environment:
-      - PORT=8080
-    networks:
-      - app-network
-
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
-    depends_on:
-      - backend
-    networks:
-      - app-network
+    backend:
+        build:
+            context: ./backend
+            dockerfile: Dockerfile
+        ports:
+            - "8080:8080"
+        environment:
+            - PORT=8080
+        networks:
+            - app-network
+        volumes:
+            - ./backend/src/resources:/app/src/backend/src/resources # 로컬 경로와 컨테이너 경로를 올바르게 매핑
+            - /backend/src/resources
+            - .:/backend/src
+            - ./backend:/backend
+    frontend:
+        build:
+            context: ./frontend
+            dockerfile: Dockerfile
+        ports:
+            - "3000:3000"
+        depends_on:
+            - backend
+        networks:
+            - app-network
 
 networks:
-  app-network:
-    driver: bridge
+    app-network:
+        driver: bridge

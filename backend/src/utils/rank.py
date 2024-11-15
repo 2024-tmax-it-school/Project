@@ -5,9 +5,9 @@ from operator import itemgetter
 
 from utils.json_io import dict_to_json_file, json_file_to_dict
 
-movie_path = 'backend/src/resources/boxoffice.json'
-review_path =  'backend/src/resources/review.json'
-user_info_path = 'backend/src/resources/user_info.json'
+movie_path = '../resources/boxoffice.json'
+review_path =  '../resources/review.json'
+user_info_path = '../resources/user_info.json'
 
 def calculate_rate() :
     global review_json

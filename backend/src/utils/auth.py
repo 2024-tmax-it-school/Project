@@ -1,6 +1,6 @@
 from utils.json_io import dict_to_json_file, json_file_to_dict
 
-user_info_path = 'backend/src/resources/user_info.json'
+user_info_path = '../resources/user_info.json'
 
 genre = [ "Action", "Fantasy", "Horror", "Thriller", "Blockbuster", "Romance", "Comedy", "Animation", "Drama"]
 
