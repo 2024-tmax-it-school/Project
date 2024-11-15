@@ -12,7 +12,7 @@ def file_open(path : str, mode : str) -> TextIOWrapper:
         return open(path, mode, encoding="utf-8")
     else:
         with open(path, 'w') as f:
-            f.write('{}')
+            f.write('[]')
         return open(path, mode, encoding="utf-8")
     
 """
